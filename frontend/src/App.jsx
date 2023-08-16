@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
- <h1>welcome to bunnybugsdev</h1>     
+ <h1>welcome to bunnybugsdev Software Compant</h1>     
     </>
   )
 }
