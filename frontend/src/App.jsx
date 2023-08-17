@@ -73,18 +73,6 @@ function App() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-
-      {/* <HomePage />
-      <AboutPage />
-      <ServicePage />
-      <ServiceDetailsPage />
-      <TeamPage />
-      <TeamDetailsPage />
-      <PricingPage />
-      <ProjectsPage />
-      <ProjectDetailsPage />
-      <FaqPage />
-      <ContactPage /> */}
     </>
   );
 }
