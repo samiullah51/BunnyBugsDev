@@ -51,6 +51,8 @@ import ServicePage from "./pages/ServicePage";
 import ServiceDetailsPage from "./pages/ServiceDetailsPage";
 import TeamPage from "./pages/TeamPage";
 import TeamDetailsPage from "./pages/TeamDetailsPage";
+import PricingPage from "./pages/PricingPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
@@ -60,7 +62,9 @@ function App() {
       {/* <ServicePage /> */}
       {/* <ServiceDetailsPage /> */}
       {/* <TeamPage /> */}
-      <TeamDetailsPage />
+      {/* <TeamDetailsPage /> */}
+      {/* <PricingPage /> */}
+      <ProjectsPage />
     </>
   );
 }
