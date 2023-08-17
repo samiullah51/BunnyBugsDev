@@ -49,6 +49,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicePage from "./pages/ServicePage";
 import ServiceDetailsPage from "./pages/ServiceDetailsPage";
+import TeamPage from "./pages/TeamPage";
 
 function App() {
   return (
@@ -56,7 +57,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <AboutPage /> */}
       {/* <ServicePage /> */}
-      <ServiceDetailsPage />
+      {/* <ServiceDetailsPage /> */}
+      <TeamPage />
     </>
   );
 }
