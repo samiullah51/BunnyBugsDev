@@ -56,21 +56,35 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import FaqPage from "./pages/FaqPage";
 import ContactPage from "./pages/ContactPage";
-
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
-      {/* <AboutPage /> */}
-      {/* <ServicePage /> */}
-      {/* <ServiceDetailsPage /> */}
-      {/* <TeamPage /> */}
-      {/* <TeamDetailsPage /> */}
-      {/* <PricingPage /> */}
-      {/* <ProjectsPage /> */}
-      {/* <ProjectDetailsPage /> */}
-      {/* <FaqPage /> */}
-      <ContactPage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/service" element={<ServicePage />} />
+        <Route path="/service/details" element={<ServiceDetailsPage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/team/details" element={<TeamDetailsPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/project/details" element={<ProjectDetailsPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+
+      {/* <HomePage />
+      <AboutPage />
+      <ServicePage />
+      <ServiceDetailsPage />
+      <TeamPage />
+      <TeamDetailsPage />
+      <PricingPage />
+      <ProjectsPage />
+      <ProjectDetailsPage />
+      <FaqPage />
+      <ContactPage /> */}
     </>
   );
 }

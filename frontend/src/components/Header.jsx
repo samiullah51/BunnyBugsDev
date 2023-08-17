@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -51,66 +52,47 @@ function Header() {
               <div className="header-menu-wrap">
                 <ul className="slider-menu">
                   <li className="active">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/service">Services</Link>
                     <ul className="menu-item">
                       <li>
-                        <a href="index-2.html">Home One</a>
+                        <Link to="/service">Service</Link>
                       </li>
                       <li>
-                        <a href="index-3.html">Home Two</a>
+                        <Link to="/service/details">Service Details</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="service.html">Services</a>
+                    <Link href="#">Pages</Link>
                     <ul className="menu-item">
                       <li>
-                        <a href="service.html">Service</a>
+                        <Link to="/team">Team</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">Service Details</a>
+                        <Link to="/team/details">Team Details</Link>
+                      </li>
+                      <li>
+                        <Link to="/pricing">Pricing</Link>
+                      </li>
+                      <li>
+                        <Link to="/projects">Project</Link>
+                      </li>
+                      <li>
+                        <Link to="/project/details">Project Details</Link>
+                      </li>
+                      <li>
+                        <Link to="/faq">Faq</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Pages</a>
-                    <ul className="menu-item">
-                      <li>
-                        <a href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a href="team-details.html">Team Details</a>
-                      </li>
-                      <li>
-                        <a href="pricing.html">Pricing</a>
-                      </li>
-                      <li>
-                        <a href="project.html">Project</a>
-                      </li>
-                      <li>
-                        <a href="project-details.html">Project Details</a>
-                      </li>
-                      <li>
-                        <a href="faq.html">Faq</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="blog-grid.html">Blog</a>
-                    <ul className="menu-item">
-                      <li>
-                        <a href="blog-grid.html">Blog Grid</a>
-                      </li>
-                      <li>
-                        <a href="blog-details.html">Blog Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact Us</a>
+                    <Link to="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -118,9 +100,9 @@ function Header() {
                 <div className="search-icon dl-search-icon">
                   <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <a className="default-btn" href="contact.html">
+                <Link className="default-btn" href="contact.html">
                   Get in Touch<span></span>
-                </a>
+                </Link>
                 <div className="mobile-menu-icon">
                   <div className="burger-menu">
                     <div className="line-menu line-half first-line"></div>
