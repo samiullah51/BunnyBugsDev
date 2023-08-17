@@ -55,6 +55,7 @@ import PricingPage from "./pages/PricingPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import FaqPage from "./pages/FaqPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -68,7 +69,8 @@ function App() {
       {/* <PricingPage /> */}
       {/* <ProjectsPage /> */}
       {/* <ProjectDetailsPage /> */}
-      <FaqPage />
+      {/* <FaqPage /> */}
+      <ContactPage />
     </>
   );
 }
