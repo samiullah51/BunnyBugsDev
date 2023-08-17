@@ -50,6 +50,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicePage from "./pages/ServicePage";
 import ServiceDetailsPage from "./pages/ServiceDetailsPage";
 import TeamPage from "./pages/TeamPage";
+import TeamDetailsPage from "./pages/TeamDetailsPage";
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
       {/* <AboutPage /> */}
       {/* <ServicePage /> */}
       {/* <ServiceDetailsPage /> */}
-      <TeamPage />
+      {/* <TeamPage /> */}
+      <TeamDetailsPage />
     </>
   );
 }
