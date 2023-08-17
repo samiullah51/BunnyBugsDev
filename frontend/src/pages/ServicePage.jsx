@@ -1,46 +1,37 @@
 import React from "react";
 import Header from "../components/Header";
 import AboutPageBanner from "../components/AboutPageBanner";
-import AboutCompany from "../components/AboutCompany";
-import AboutPromoSection from "../components/AboutPromoSection";
-import AboutProcess from "../components/AboutProcess";
+import LatestServices from "../components/LatestServices";
 import AboutBottom from "../components/AboutBottom";
 import AboutVideoSection from "../components/AboutVideoSection";
-import Testemonial from "../components/Testemonial";
+import AboutProcess from "../components/AboutProcess";
 import ShortContact from "../components/ShortContact";
-import TeamMembers from "../components/TeamMembers";
 import GlobalClient from "../components/GlobalClient";
 import ConnectSection from "../components/ConnectSection";
 import SocialSection from "../components/SocialSection";
 import WidgetSection from "../components/WidgetSection";
 import Footer from "../components/Footer";
 
-function AboutPage() {
+function ServicePage() {
   return (
     <>
-      {/* Header */}
+      {/* header */}
       <Header />
-      {/* Banner */}
-      <AboutPageBanner title="About Us" />
-      {/* About Company */}
-      <AboutCompany />
-      {/* About Promo Section */}
-      <AboutPromoSection />
-      {/* About Process */}
-      <AboutProcess />
-      {/* about Bottom */}
+      {/* banner */}
+      <AboutPageBanner title="Service" desc="Grid" />
+      {/* latest services */}
+      <LatestServices />
+      {/* bottom about */}
       <AboutBottom />
-      {/* About Video Section */}
+      {/* about video section */}
       <AboutVideoSection />
-      {/* Testemonial */}
-      <Testemonial />
-      {/* Short Contact */}
+      {/* our process */}
+      <AboutProcess />
+      {/* shor contact */}
       <ShortContact />
-      {/* Team Members */}
-      <TeamMembers />
-      {/* Global Clients */}
+      {/* Global clients */}
       <GlobalClient />
-      {/* Connection Section */}
+      {/* connect section */}
       <ConnectSection />
       {/* Social Section */}
       <SocialSection />
@@ -52,4 +43,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ServicePage;

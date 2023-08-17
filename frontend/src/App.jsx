@@ -47,12 +47,16 @@ import "../src/assets/js/main";
 import "../src/assets/js/slider";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ServicePage from "./pages/ServicePage";
+import ServiceDetailsPage from "./pages/ServiceDetailsPage";
 
 function App() {
   return (
     <>
       {/* <HomePage /> */}
-      <AboutPage />
+      {/* <AboutPage /> */}
+      {/* <ServicePage /> */}
+      <ServiceDetailsPage />
     </>
   );
 }

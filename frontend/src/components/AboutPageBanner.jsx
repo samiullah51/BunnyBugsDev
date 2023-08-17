@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutPageBanner() {
+function AboutPageBanner({ title, desc }) {
   return (
     <section className="page-header">
       <div className="container">
@@ -8,10 +8,12 @@ function AboutPageBanner() {
           <h4>
             <a href="index-2.html">Home </a> //{" "}
             <a href="#">
-              <span> About Us</span>
+              <span> {title}</span>
             </a>
           </h4>
-          <h2>About Us</h2>
+          <h2>
+            {title} {desc}
+          </h2>
         </div>
       </div>
     </section>
