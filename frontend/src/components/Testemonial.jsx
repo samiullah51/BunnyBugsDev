@@ -14,7 +14,7 @@ function Testemonial() {
           >
             <div className="sub-heading">
               <h4>
-                <span>07</span>Our Testimonials
+                <span>//</span>Our Testimonials
               </h4>
             </div>
             <h2>
