@@ -1,4 +1,10 @@
 import React from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import HttpsOutlinedIcon from "@mui/icons-material/HttpsOutlined";
 function Login() {
   return (
     <>
@@ -15,7 +21,7 @@ function Login() {
                   <label>Email Address</label>
                   <div className="input-group">
                     <span className="input-group-text">
-                      <i className="icon-email"></i>
+                      <MailOutlineIcon />
                     </span>
                     <input
                       className="form-control"
@@ -29,7 +35,7 @@ function Login() {
                   <label>Password</label>
                   <div className="input-group">
                     <span className="input-group-text">
-                      <i className="icon-lock"></i>
+                      <HttpsOutlinedIcon />
                     </span>
                     <input
                       className="form-control"
@@ -64,22 +70,22 @@ function Login() {
                   <ul className="login-social">
                     <li>
                       <a href="https://www.linkedin.com/" target="_blank">
-                        <i data-feather="linkedin"></i>
+                        <LinkedInIcon />
                       </a>
                     </li>
                     <li>
                       <a href="https://twitter.com/" target="_blank">
-                        <i data-feather="twitter"></i>
+                        <TwitterIcon />
                       </a>
                     </li>
                     <li>
                       <a href="https://www.facebook.com/" target="_blank">
-                        <i data-feather="facebook"></i>
+                        <FacebookIcon />
                       </a>
                     </li>
                     <li>
                       <a href="https://www.instagram.com/" target="_blank">
-                        <i data-feather="instagram"> </i>
+                        <InstagramIcon />
                       </a>
                     </li>
                   </ul>
