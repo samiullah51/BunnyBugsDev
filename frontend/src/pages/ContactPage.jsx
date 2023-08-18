@@ -12,7 +12,7 @@ function ContactPage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="contact" />
       {/* banner */}
       <AboutPageBanner title="Contact Us" />
       {/* Map */}

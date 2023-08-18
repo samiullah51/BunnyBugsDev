@@ -14,7 +14,7 @@ function TeamDetailsPage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="teamDetails" />
       {/* banner */}
       <AboutPageBanner title="Team Details" />
       {/* Team Details */}

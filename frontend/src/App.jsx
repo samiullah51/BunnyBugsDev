@@ -43,7 +43,6 @@ import "../src/assets/js/vendor/venobox.min";
 import "../src/assets/js/vendor/waypoints.min";
 
 import "../src/assets/js/main";
-
 import "../src/assets/js/slider";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -61,7 +60,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage route="home" />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/service/details" element={<ServiceDetailsPage />} />

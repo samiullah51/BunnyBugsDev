@@ -14,7 +14,7 @@ function ProjectsPage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="projects" />
       {/* banner */}
       <AboutPageBanner title="Latest Projects" />
       {/* Latest Projects */}

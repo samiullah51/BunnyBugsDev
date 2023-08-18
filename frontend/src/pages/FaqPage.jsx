@@ -14,7 +14,7 @@ function FaqPage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="faq" />
       {/* banner */}
       <AboutPageBanner title="FAQ’s" />
       {/* Common Question */}

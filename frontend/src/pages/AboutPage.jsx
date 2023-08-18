@@ -19,7 +19,7 @@ function AboutPage() {
   return (
     <>
       {/* Header */}
-      <Header />
+      <Header route="about" />
       {/* Banner */}
       <AboutPageBanner title="About Us" />
       {/* About Company */}

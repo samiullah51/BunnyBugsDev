@@ -24,7 +24,7 @@ function HomePage() {
   return (
     <>
       {/* // header */}
-      <Header />
+      <Header route="home" />
       {/* // banner */}
       <Banner />
       {/* Slider */}

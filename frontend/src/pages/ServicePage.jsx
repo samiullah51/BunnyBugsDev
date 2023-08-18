@@ -16,7 +16,7 @@ function ServicePage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="service" />
       {/* banner */}
       <AboutPageBanner title="Service" desc="Grid" />
       {/* latest services */}

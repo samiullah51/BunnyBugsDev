@@ -12,7 +12,7 @@ function PricingPage() {
   return (
     <>
       {/* header */}
-      <Header />
+      <Header route="pricing" />
       {/* banner */}
       <AboutPageBanner title="Pricing Plans" />
       {/* Pricing plans */}
