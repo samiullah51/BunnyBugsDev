@@ -1,0 +1,28 @@
+.sidebar__items{
+    width: 100%;
+    
+}
+.sidebar__items .single__item{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+    
+}
+.sidebar__items .single__item.active{
+    color: var(--primary-color);
+    background-color: rgba(239, 237, 241, 0.589);
+}
+.sidebar__items .single__item:hover{
+    cursor: pointer;
+background-color: rgba(239, 237, 241, 0.589);
+color: var(--primary-color);
+}
+.single__item .MuiSvgIcon-root{
+    margin-right: 10px;
+    font-size: 18px;
+}

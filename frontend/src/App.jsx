@@ -87,7 +87,7 @@ import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import FaqPage from "./pages/FaqPage";
 import ContactPage from "./pages/ContactPage";
 import Admin from "./pages/admin/Login";
-
+import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import AdminHomePage from "./pages/admin/AdminHomePage";
 function App() {
