@@ -20,21 +20,9 @@ function SignleApplication() {
       <p className="app__desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing...
       </p>
-      <p className="timing veiw">veiw</p>
+      <p className="timing veiw">Veiw</p>
+      <p className="timing delete">Delete</p>
       <p className="timing">2 days ago</p>
-      <div className="more__menu">
-        <MoreVertIcon onClick={() => setMenu(!menu)} />
-        {menu && (
-          <div>
-            <p>
-              <EditIcon /> Edit
-            </p>
-            <p>
-              <DeleteOutlineIcon /> Delete
-            </p>
-          </div>
-        )}
-      </div>
     </div>
   );
 }

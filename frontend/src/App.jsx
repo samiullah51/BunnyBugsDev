@@ -58,6 +58,7 @@ import Admin from "./pages/admin/Login";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import AdminHomePage from "./pages/admin/AdminHomePage";
+import ServicesPage from "./pages/admin/ServicesPage";
 function App() {
   return (
     <>
@@ -74,6 +75,7 @@ function App() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/admin" element={<AdminHomePage />} />
+        <Route path="/admin/services" element={<ServicesPage />} />
       </Routes>
     </>
   );
