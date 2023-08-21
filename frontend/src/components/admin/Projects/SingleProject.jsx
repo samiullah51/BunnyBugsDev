@@ -4,7 +4,7 @@ import projects from "../../../assets/projects.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-function SingleService() {
+function SingleProject() {
   const [menu, setMenu] = useState(false);
 
   return (
@@ -22,4 +22,4 @@ function SingleService() {
   );
 }
 
-export default SingleService;
+export default SingleProject;
