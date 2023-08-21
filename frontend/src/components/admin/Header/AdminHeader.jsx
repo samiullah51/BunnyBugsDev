@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AdminHeader.css";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import searchIcon from "../../../assets/img/search2.svg";
@@ -14,6 +14,7 @@ import logo from "../../../../public/vite.svg";
 
 function AdminHeader() {
   const sidebar = useSelector((state) => state.sidebar);
+  const [show, setShow] = useState(true);
 
   const dispatch = useDispatch();
   return (
@@ -26,11 +27,29 @@ function AdminHeader() {
         </div>
       </div>
       <div className="header__right">
-        <DarkModeOutlinedIcon />
-        <ShoppingCartOutlinedIcon />
-        <TurnedInNotIcon />
-        <NotificationsNoneOutlinedIcon />
-        <PeopleOutlinedIcon />
+        <div className="icon__main">
+          <DarkModeOutlinedIcon onClick={() => setShow(!show)} />
+          <div className={show ? "icon__menu" : "icon__menu active"}>
+            <p>icon</p>
+            <p>title</p>
+          </div>
+        </div>
+        <div className="icon__main">
+          <ShoppingCartOutlinedIcon />
+          <div className="icon__menu">
+            <p>icon</p>
+            <p>title</p>
+          </div>
+        </div>
+        <div>
+          <TurnedInNotIcon />
+        </div>
+        <div>
+          <NotificationsNoneOutlinedIcon />
+        </div>
+        <div>
+          <PeopleOutlinedIcon />
+        </div>
       </div>
     </div>
   );

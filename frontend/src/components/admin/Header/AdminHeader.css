@@ -9,6 +9,8 @@ justify-content: space-between;
 transition: .3s;
 background-color:#fff;
 width: 100%;
+position: sticky;
+top: 0;
 }
 .admin__header .header__left{
     flex-basis: 40%;
@@ -43,7 +45,24 @@ border-radius: 20px;
     margin: 0 10px;
     transition: .3s;
 }
+
+.header__right .icon__main {
+    position: relative;
+    transition: .3s;
+
+}
+
+.header__right .icon__main .icon__menu{
+    display: none;
+    position: absolute;
+    top: 140%;
+    left: -150px;
+    width: 200px;
+    background-color: red;
+    transition: .3s;
+}
 .admin__header  .MuiSvgIcon-root:hover{
     cursor: pointer;
     color: var(--primary-color);
+
 }

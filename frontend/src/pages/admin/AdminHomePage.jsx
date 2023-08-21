@@ -3,6 +3,8 @@ import "./AdminHomePage.css";
 import Sidebar from "../../components/admin/Sidebar/Sidebar";
 import AdminHeader from "../../components/admin/Header/AdminHeader";
 import { useSelector } from "react-redux";
+import AdminBanner from "./AdminBanner";
+import Applications from "../../components/admin/Applications/Applications";
 function AdminHomePage() {
   const sidebar = useSelector((state) => state.sidebar);
 
@@ -13,7 +15,10 @@ function AdminHomePage() {
 
       <div className="admin__contents">
         <AdminHeader />
-        <h2>dsdd</h2>
+        {/* admin banner */}
+        <AdminBanner />
+        {/*Applications  */}
+        <Applications />
       </div>
     </div>
   );
