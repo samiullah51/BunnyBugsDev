@@ -62,6 +62,8 @@ import ServicesPage from "./pages/admin/ServicesPage";
 import AdminProjectsPage from "./pages/admin/AdminProjectsPage";
 import Team from "./components/admin/team/Team";
 import AdminTeamPage from "./pages/admin/AdminTeamPage";
+import AdminApplicationsPage from "./pages/admin/AdminApplicationsPage";
+import AdminJobPage from "./pages/admin/AdminJobPage";
 function App() {
   return (
     <>
@@ -81,8 +83,8 @@ function App() {
         <Route path="/admin/services" element={<ServicesPage />} />
         <Route path="/admin/projects" element={<AdminProjectsPage />} />
         <Route path="/admin/team" element={<AdminTeamPage />} />
-        <Route path="/admin/careers" element={<AdminProjectsPage />} />
-        <Route path="/admin/applications" element={<AdminProjectsPage />} />
+        <Route path="/admin/careers" element={<AdminJobPage />} />
+        <Route path="/admin/applications" element={<AdminApplicationsPage />} />
         <Route path="/admin/jobs" element={<AdminProjectsPage />} />
         <Route path="/admin/aboutpagemanager" element={<AdminProjectsPage />} />
         <Route

@@ -14,12 +14,12 @@ function SignleApplication() {
         alt=""
       />
       <div className="application__info">
-        <p className="app__by">Sami Samiullah</p>
+        <p className="app__by" style={{ fontSize: "16px", width: "100%" }}>
+          Sami Samiullah
+        </p>
       </div>
       <p className="app__subject">Urgent Leave</p>
-      <p className="app__desc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing...
-      </p>
+      <p className="app__desc">Lorem ipsum dolor sit amet kkjkjk jklkjlkl...</p>
       <p className="timing veiw">Veiw</p>
       <p className="timing delete">Delete</p>
       <p className="timing">2 days ago</p>
