@@ -15,7 +15,6 @@ function SingleService() {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.{" "}
       </p>
       <p className="status">Publish</p>
-      <p className="timing veiw">Veiw</p>
       <p className="timing edit">Edit</p>
       <p className="timing delete">Delete</p>
     </div>

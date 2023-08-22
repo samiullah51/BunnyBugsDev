@@ -1,30 +1,29 @@
 import React, { useState } from "react";
-import "./Services.css";
-import SingleProject from "./SingleProject";
-import AddService from "../Services/AddService";
-import AddProject from "./AddProjects";
-function Projects() {
+import "./Team.css";
+import SingleMember from "./SingleMember";
+import AddMember from "./AddMember";
+function Team() {
   const [modal, setModal] = useState(false);
 
   return (
     <div className="services">
       <div className="services__header">
-        <p>Projects</p>
+        <p>Our Team</p>
         <div className="add__new" onClick={() => setModal(!modal)}>
           Add New
         </div>
       </div>
-      <SingleProject />
-      <SingleProject />
-      <SingleProject />
-      <SingleProject />
-      <SingleProject />
+      <SingleMember />
+      <SingleMember />
+      <SingleMember />
+      <SingleMember />
+      <SingleMember />
 
       <div
         className="servce__modal"
         style={{ transform: modal ? "translateY(0%)" : "translateY(-140%)" }}
       >
-        <AddProject setModal={setModal} />
+        <AddMember setModal={setModal} />
         <div className="modal__close" onClick={() => setModal(false)}>
           X
         </div>
@@ -33,4 +32,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Team;

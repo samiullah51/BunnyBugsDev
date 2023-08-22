@@ -58,8 +58,10 @@ import Admin from "./pages/admin/Login";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import AdminHomePage from "./pages/admin/AdminHomePage";
-import ServicesPage from "./pages/admin/ServicesPage copy";
+import ServicesPage from "./pages/admin/ServicesPage";
 import AdminProjectsPage from "./pages/admin/AdminProjectsPage";
+import Team from "./components/admin/team/Team";
+import AdminTeamPage from "./pages/admin/AdminTeamPage";
 function App() {
   return (
     <>
@@ -75,9 +77,19 @@ function App() {
         <Route path="/project/details" element={<ProjectDetailsPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/admin" element={<AdminHomePage />} />
+        <Route path="/admin/index" element={<AdminHomePage />} />
         <Route path="/admin/services" element={<ServicesPage />} />
         <Route path="/admin/projects" element={<AdminProjectsPage />} />
+        <Route path="/admin/team" element={<AdminTeamPage />} />
+        <Route path="/admin/careers" element={<AdminProjectsPage />} />
+        <Route path="/admin/applications" element={<AdminProjectsPage />} />
+        <Route path="/admin/jobs" element={<AdminProjectsPage />} />
+        <Route path="/admin/aboutpagemanager" element={<AdminProjectsPage />} />
+        <Route
+          path="/admin/contactpagemanager"
+          element={<AdminProjectsPage />}
+        />
+        <Route path="/admin/setting" element={<AdminProjectsPage />} />
       </Routes>
     </>
   );

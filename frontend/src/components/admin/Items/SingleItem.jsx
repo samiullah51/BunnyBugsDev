@@ -1,12 +1,12 @@
 import React from "react";
 import "./Items.css";
-
-function SingleItem({ title, icon, status }) {
+import { Link, NavLink } from "react-router-dom";
+function SingleItem({ title, icon, status, to }) {
   return (
-    <div className={status ? "single__item active" : "single__item"}>
+    <NavLink to={to} className="single__item">
       {icon}
       <span>{title}</span>
-    </div>
+    </NavLink>
   );
 }
 

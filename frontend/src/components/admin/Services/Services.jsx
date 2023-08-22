@@ -26,7 +26,7 @@ function Services() {
 
       <div
         className="servce__modal"
-        style={{ transform: modal ? "translateY(0%)" : "translateY(-100%)" }}
+        style={{ transform: modal ? "translateY(0%)" : "translateY(-140%)" }}
       >
         <AddService setModal={setModal} />
         <div className="modal__close" onClick={() => setModal(false)}>
