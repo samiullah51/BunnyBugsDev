@@ -1,20 +1,21 @@
 import React from "react";
 import Sidebar from "../../components/admin/Sidebar/Sidebar";
 import AdminHeader from "../../components/admin/Header/AdminHeader";
-import Jobs from "../../components/admin/jobs/Jobs";
+import JobApplications from "../../components/admin/JobApplications/JobApplications";
 
-function AdminJobPage() {
+function JobApplicationPage() {
   return (
     <div className="admin__home__page">
       {/* Sidebar */}
       <Sidebar />
+
       <div className="admin__contents">
         <AdminHeader />
         {/* Services */}
-        <Jobs />
+        <JobApplications />
       </div>
     </div>
   );
 }
 
-export default AdminJobPage;
+export default JobApplicationPage;
