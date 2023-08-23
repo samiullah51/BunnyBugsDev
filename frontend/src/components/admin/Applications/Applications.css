@@ -1,7 +1,7 @@
 .applications{
     padding: 20px;
-    width: 96%;
-    margin: auto;
+    width: 95%;
+    margin: 20px auto;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
@@ -45,6 +45,10 @@
     padding: 2px 10px;
     border-radius: 7px;
     color: var(--primary-color);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  .timing.veiw{
     background-color: rgba(30, 143, 255, 0.219);

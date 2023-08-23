@@ -56,12 +56,17 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import FaqPage from "./pages/FaqPage";
 import ContactPage from "./pages/ContactPage";
-import Admin from "./pages/admin/Login";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import AdminHomePage from "./pages/admin/AdminHomePage";
-import ServicesPage from "./pages/admin/ServicesPage copy";
+import ServicesPage from "./pages/admin/ServicesPage";
 import AdminProjectsPage from "./pages/admin/AdminProjectsPage";
+import Team from "./components/admin/team/Team";
+import AdminTeamPage from "./pages/admin/AdminTeamPage";
+import AdminApplicationsPage from "./pages/admin/AdminApplicationsPage";
+import AdminJobPage from "./pages/admin/AdminJobPage";
+import JobApplicationPage from "./pages/admin/JobApplicationPage";
+import AdminLoginPage from "./pages/admin/AdminLoginPage";
 function App() {
   return (
     <>
@@ -77,9 +82,20 @@ function App() {
         <Route path="/project/details" element={<ProjectDetailsPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/admin" element={<AdminHomePage />} />
+        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/admin/index" element={<AdminHomePage />} />
         <Route path="/admin/services" element={<ServicesPage />} />
         <Route path="/admin/projects" element={<AdminProjectsPage />} />
+        <Route path="/admin/team" element={<AdminTeamPage />} />
+        <Route path="/admin/careers" element={<AdminJobPage />} />
+        <Route path="/admin/applications" element={<AdminApplicationsPage />} />
+        <Route path="/admin/jobs" element={<JobApplicationPage />} />
+        <Route path="/admin/aboutpagemanager" element={<AdminProjectsPage />} />
+        <Route
+          path="/admin/contactpagemanager"
+          element={<AdminProjectsPage />}
+        />
+        <Route path="/admin/setting" element={<AdminProjectsPage />} />
       </Routes>
     </>
   );

@@ -12,25 +12,49 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 function Items() {
   return (
     <div className="sidebar__items">
-      <SingleItem title="Dashboard" status={true} icon={<GridViewIcon />} />
-      <SingleItem title="Services" icon={<SettingsAccessibilityIcon />} />
-      <SingleItem title="Portfolio" icon={<FeaturedPlayListOutlinedIcon />} />
-      <SingleItem title="Our Team" icon={<GroupsOutlinedIcon />} />
-      <SingleItem title="Carriers" icon={<GroupAddOutlinedIcon />} />
+      <SingleItem to="/admin/index" title="Dashboard" icon={<GridViewIcon />} />
       <SingleItem
+        to="/admin/services"
+        title="Services"
+        icon={<SettingsAccessibilityIcon />}
+      />
+      <SingleItem
+        to="/admin/projects"
+        title="Portfolio"
+        icon={<FeaturedPlayListOutlinedIcon />}
+      />
+      <SingleItem
+        to="/admin/team"
+        title="Our Team"
+        icon={<GroupsOutlinedIcon />}
+      />
+      <SingleItem
+        to="/admin/careers"
+        title="Careers"
+        icon={<GroupAddOutlinedIcon />}
+      />
+      <SingleItem
+        to="/admin/applications"
         title="Contact Applications"
         icon={<IndeterminateCheckBoxOutlinedIcon />}
       />
-      <SingleItem title="Jobs Applications" icon={<PsychologyOutlinedIcon />} />
       <SingleItem
+        to="/admin/jobs"
+        title="Jobs Applications"
+        icon={<PsychologyOutlinedIcon />}
+      />
+      <SingleItem
+        to="/admin/aboutpagemanager"
         title="About Page Manager"
         icon={<IndeterminateCheckBoxOutlinedIcon />}
       />
       <SingleItem
+        to="/admin/contactpagemanager"
         title="Contact Page Manager"
         icon={<IndeterminateCheckBoxOutlinedIcon />}
       />
       <SingleItem
+        to="/admin/setting"
         title="General Site Setting"
         icon={<SettingsOutlinedIcon />}
       />

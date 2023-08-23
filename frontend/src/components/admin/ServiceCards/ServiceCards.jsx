@@ -11,10 +11,30 @@ import application from "../../../assets/application2.png";
 function ServiceCards() {
   return (
     <div className="services__cards">
-      <SingleServiceCard title="Services" icon={service} count={12} />
-      <SingleServiceCard title="Team Members" icon={team} count={23} />
-      <SingleServiceCard title="Projects" icon={projects} count={55} />
-      <SingleServiceCard title="Applications" icon={application} count={12} />
+      <SingleServiceCard
+        to="/admin/services"
+        title="Services"
+        icon={service}
+        count={12}
+      />
+      <SingleServiceCard
+        to="/admin/team"
+        title="Team Members"
+        icon={team}
+        count={23}
+      />
+      <SingleServiceCard
+        to="/admin/projects"
+        title="Projects"
+        icon={projects}
+        count={55}
+      />
+      <SingleServiceCard
+        to="/admin/applications"
+        title="Applications"
+        icon={application}
+        count={12}
+      />
     </div>
   );
 }

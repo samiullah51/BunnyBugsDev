@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import "./Services.css";
 import SingleService from "./SingleService";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
+import UploadImg from "../../../assets/projects.png";
+import AddService from "./AddService";
 function Services() {
   const [modal, setModal] = useState(false);
+
   return (
     <div className="services">
       <div className="services__header">
@@ -20,21 +26,9 @@ function Services() {
 
       <div
         className="servce__modal"
-        style={{ transform: modal ? "translateY(0%)" : "translateY(-100%)" }}
+        style={{ transform: modal ? "translateY(0%)" : "translateY(-140%)" }}
       >
-        <div className="modal__form">
-          <p className="title">Add New Service</p>
-
-          <div className="input__row">
-            <label htmlFor="">Service Name</label>
-            <input type="text" style={{ width: "40%" }} autoFocus={true} />
-          </div>
-          {/* Description */}
-          <div className="input__row">
-            <label htmlFor="">Service Description</label>
-            <textarea style={{ width: "40%" }}> </textarea>
-          </div>
-        </div>
+        <AddService setModal={setModal} />
         <div className="modal__close" onClick={() => setModal(false)}>
           X
         </div>

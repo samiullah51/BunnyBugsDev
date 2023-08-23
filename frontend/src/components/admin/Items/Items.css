@@ -22,13 +22,13 @@
 }
 .sidebar__items .single__item.active{
     color: var(--primary-color);
-    background-color: rgba(239, 237, 241, 0.589);
+    background-color: #da6d0742;
     font-weight: bold;
 }
 .sidebar__items .single__item:hover{
     cursor: pointer;
-background-color: rgba(239, 237, 241, 0.589);
-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: #da6d071a;
 }
 .single__item .MuiSvgIcon-root{
     margin-right: 10px;

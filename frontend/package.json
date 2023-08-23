@@ -26,6 +26,7 @@
     "react-router-dom": "^6.15.0",
     "react-spring": "^9.7.2",
     "react-step-wizard": "^5.3.11",
+    "react-tag-input-component": "^2.0.2",
     "reactstrap": "^9.2.0",
     "redux": "^4.2.1",
     "styled-components": "^5.3.11"
