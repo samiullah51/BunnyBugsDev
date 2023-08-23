@@ -9,7 +9,6 @@ const {
 
 const router = require("express").Router();
 
-// Add a Service
 router.post("/add", AddService);
 router.get("/all", GetAllServices);
 router.get("/all/publish", GetAllPublishServices);

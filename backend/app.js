@@ -8,6 +8,8 @@ const connectToDatabase = require("./connection");
 const authRouter = require("./routes/user.routes");
 const servicesRouter = require("./routes/services.routes");
 const projectsRouter = require("./routes/projects.routes");
+const teamRouter = require("./routes/team.routes");
+const jobsRouter = require("./routes/jobs.routes");
 
 // dotEnv Configuration
 dotenv.config();
@@ -25,6 +27,8 @@ connectToDatabase();
 app.use("/api/v1/user", authRouter);
 app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/projects", projectsRouter);
+app.use("/api/v1/team", teamRouter);
+app.use("/api/v1/job", jobsRouter);
 
 // Listening to a server
 app.listen(process.env.PORT || 8000, () => {
