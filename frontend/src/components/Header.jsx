@@ -24,7 +24,7 @@ function Header({ route }) {
                     <a href="#">Linkedin</a>
                   </li>
                   <li className="social-item">
-                    <a href="#">Instagram</a>
+                    <a href="#">Instag   ram</a>
                   </li>
                 </ul>
               </div>
