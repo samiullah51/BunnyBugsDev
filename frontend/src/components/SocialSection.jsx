@@ -5,7 +5,7 @@ function SocialSection() {
     <section class="social-section bg-grey bd-top bd-bottom">
       <div class="container">
         <div class="row social-wrap">
-          <div class="col-md-2 col-sm-6 sm-padding">
+          <div class="col-md-3 col-sm-6 sm-padding">
             <div class="social-item bd-right">
               <div class="social-icon">
                 <a href="#">
@@ -17,19 +17,7 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-2 col-sm-6 sm-padding">
-            <div class="social-item bd-right">
-              <div class="social-icon icon-1">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </div>
-              <h4>
-                <a href="#">Twitter</a>
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6 sm-padding">
+          <div class="col-md-3 col-sm-6 sm-padding">
             <div class="social-item bd-right">
               <div class="social-icon icon-2">
                 <a href="#">
@@ -41,7 +29,7 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-2 col-sm-6 sm-padding">
+          <div class="col-md-3 col-sm-6 sm-padding">
             <div class="social-item bd-right">
               <div class="social-icon icon-3">
                 <a href="#">
@@ -53,19 +41,7 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-2 col-sm-6 sm-padding">
-            <div class="social-item bd-right">
-              <div class="social-icon icon-4">
-                <a href="#">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-              </div>
-              <h4>
-                <a href="#">Youtube</a>
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6 sm-padding">
+          <div class="col-md-3 col-sm-6 sm-padding">
             <div class="social-item">
               <div class="social-icon icon-5">
                 <a href="#">

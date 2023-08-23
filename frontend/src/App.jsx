@@ -18,6 +18,8 @@ import "../src/assets/css/swiper.min.css";
 
 import "../src/assets/css/venobox.min.css";
 
+import "../src/assets/css/custom.css"
+
 import "../src/assets/js/vendor/chart.min";
 
 import "../src/assets/js/vendor/imagesloaded.pkgd.min";

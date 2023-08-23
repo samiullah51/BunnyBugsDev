@@ -22,13 +22,6 @@ function TeamPage() {
       <WhyChooseUs />
       {/* Team members */}
       <TeamMembers />
-      <AboutBottom />
-      {/* about video section */}
-      <AboutVideoSection />
-      {/* Global clients */}
-      <GlobalClient />
-      {/* connect section */}
-      <ConnectSection />
       {/* Social Section */}
       <SocialSection />
       {/* Widget Section */}
