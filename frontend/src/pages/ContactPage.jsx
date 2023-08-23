@@ -16,9 +16,7 @@ function ContactPage() {
       {/* banner */}
       <AboutPageBanner title="Contact Us" />
       {/* Map */}
-      {/* <Map /> */}
       <Contact />
-      <ConnectSection />
       {/* Social Section */}
       <SocialSection />
       {/* Widget Section */}

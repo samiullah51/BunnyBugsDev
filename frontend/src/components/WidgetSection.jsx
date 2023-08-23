@@ -35,16 +35,13 @@ function WidgetSection() {
                   <a href="about.html">About Us</a>
                 </li>
                 <li>
-                  <a href="service.html">Services</a>
+                  <a href="service.html">Our Services</a>
                 </li>
                 <li>
                   <a href="team.html">Our Team</a>
                 </li>
                 <li>
-                  <a href="pricing.html">Pricing Plans</a>
-                </li>
-                <li>
-                  <a href="faq.html">FAQ & ANS</a>
+                  <a href="pricing.html">Contact Us</a>
                 </li>
               </ul>
             </div>

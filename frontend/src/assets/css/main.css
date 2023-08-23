@@ -6538,7 +6538,6 @@ blockquote span:before {
 }
 
 .footer-content {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }

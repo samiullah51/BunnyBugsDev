@@ -13,20 +13,11 @@ function Header({ route }) {
                 <div className="top-icon"></div>
                 <p>Our company has 25+ years' experience!</p>
               </div>
-              <div className="top-mid-content">
-                <h4>
-                  <a href="contact.html">Login/Sign in</a>
-                </h4>
-              </div>
               <div className="top-right-content">
                 <ul className="top-social">
                   <li className="social-item">
                     <div className="dot"></div>
                     <a href="#">Facebook</a>
-                  </li>
-                  <li className="social-item">
-                    <div className="dot"></div>
-                    <a href="#">Twitter</a>
                   </li>
                   <li className="social-item">
                     <div className="dot"></div>
@@ -58,42 +49,11 @@ function Header({ route }) {
                     <Link to="/about">About</Link>
                   </li>
                   <li className={route === "service" ? "active" : ""}>
-                    <Link to="/service">Services</Link>
-                    <ul className="menu-item">
-                      <li className={route === "service" ? "active" : ""}>
-                        <Link to="/service">Service</Link>
-                      </li>
-                      <li
-                        className={route === "serviceDetails" ? "active" : ""}
-                      >
-                        <Link to="/service/details">Service Details</Link>
-                      </li>
-                    </ul>
+                  <Link to="/service">Our Services</Link>
                   </li>
                   <li className={route === "team" ? "active" : ""}>
-                    <Link href="#">Pages</Link>
-                    <ul className="menu-item">
-                      <li className={route === "team" ? "active" : ""}>
-                        <Link to="/team">Team</Link>
-                      </li>
-                      <li className={route === "teamDetails" ? "active" : ""}>
-                        <Link to="/team/details">Team Details</Link>
-                      </li>
-                      <li className={route === "pricing" ? "active" : ""}>
-                        <Link to="/pricing">Pricing</Link>
-                      </li>
-                      <li className={route === "projects" ? "active" : ""}>
-                        <Link to="/projects">Project</Link>
-                      </li>
-                      <li
-                        className={route === "projectsDetails" ? "active" : ""}
-                      >
-                        <Link to="/project/details">Project Details</Link>
-                      </li>
-                      <li className={route === "faq" ? "active" : ""}>
-                        <Link to="/faq">Faq</Link>
-                      </li>
-                    </ul>
+                  <Link to="/team">Our Team</Link>
+                    
                   </li>
                   <li className={route === "contact" ? "active" : ""}>
                     <Link to="/contact">Contact Us</Link>

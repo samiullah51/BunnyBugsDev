@@ -40,8 +40,6 @@ function AboutPage() {
       <TeamMembers />
       {/* Global Clients */}
       <GlobalClient />
-      {/* Connection Section */}
-      <ConnectSection />
       {/* Social Section */}
       <SocialSection />
       {/* Widget Section */}

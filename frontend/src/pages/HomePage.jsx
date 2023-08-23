@@ -37,27 +37,17 @@ function HomePage() {
       <AboutSection />
       {/* About Content Slider */}
       <AboutContentSlider />
-      {/* About Section 2 */}
-      <AboutSection2 />
-      {/* Skills Section */}
-      <SkillSection />
       {/* Latest Projects Section */}
       <LatestProjectsSection />
       {/* Get in Touch */}
       <GetInTouch />
       {/* Testemonial */}
       <Testemonial />
-      {/* Common Question */}
-      <CommonQuestions />
       {/* Best Services */}
       <BestServices />
       {/* Latest News */}
-      <LatestNews />
-      {/* Global Clients */}
       <GlobalClient />
       {/* Connect Sections */}
-      <ConnectSection />
-      {/* Social Section */}
       <SocialSection />
       {/* Widget Section */}
       <WidgetSection />

@@ -21,18 +21,8 @@ function ServicePage() {
       <AboutPageBanner title="Service" desc="Grid" />
       {/* latest services */}
       <LatestServices />
-      {/* bottom about */}
-      <AboutBottom />
-      {/* about video section */}
-      <AboutVideoSection />
       {/* our process */}
-      <AboutProcess />
-      {/* shor contact */}
       <ShortContact />
-      {/* Global clients */}
-      <GlobalClient />
-      {/* connect section */}
-      <ConnectSection />
       {/* Social Section */}
       <SocialSection />
       {/* Widget Section */}

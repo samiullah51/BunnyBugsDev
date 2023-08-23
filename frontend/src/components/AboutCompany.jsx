@@ -71,38 +71,6 @@ function AboutCompany() {
                     </div>
                   </div>
                 </div>
-                <div className="about-btn-box">
-                  <div className="about-btn">
-                    <a href="about.html" className="default-btn">
-                      Discover Now
-                    </a>
-                    <div className="at-box">
-                      <div className="author-group">
-                        <img src={author} alt="author" />
-                      </div>
-                      <div className="rating-box">
-                        <ul className="ratings">
-                          <li>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                          </li>
-                          <li>
-                            <i className="fa-sharp fa-solid fa-star"></i>
-                          </li>
-                        </ul>
-                        <h4>Orginal reviews</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
