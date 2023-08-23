@@ -10,6 +10,7 @@ const servicesRouter = require("./routes/services.routes");
 const projectsRouter = require("./routes/projects.routes");
 const teamRouter = require("./routes/team.routes");
 const jobsRouter = require("./routes/jobs.routes");
+const contactRouter = require("./routes/contact.routes");
 
 // dotEnv Configuration
 dotenv.config();
@@ -29,6 +30,7 @@ app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/projects", projectsRouter);
 app.use("/api/v1/team", teamRouter);
 app.use("/api/v1/job", jobsRouter);
+app.use("/api/v1/contact", contactRouter);
 
 // Listening to a server
 app.listen(process.env.PORT || 8000, () => {
