@@ -10,11 +10,15 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { useDispatch, useSelector } from "react-redux";
 import { TOGGLE_SIDEBAR } from "../../../redux/User/userTypes";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import PlayForWorkOutlinedIcon from "@mui/icons-material/PlayForWorkOutlined";
 import logo from "../../../../public/vite.svg";
 
 function AdminHeader() {
   const sidebar = useSelector((state) => state.sidebar);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
 
   const dispatch = useDispatch();
   return (
@@ -27,28 +31,25 @@ function AdminHeader() {
         </div>
       </div>
       <div className="header__right">
-        <div className="icon__main">
-          <DarkModeOutlinedIcon onClick={() => setShow(!show)} />
-          <div className={show ? "icon__menu" : "icon__menu active"}>
-            <p>icon</p>
-            <p>title</p>
+        <div
+          className="icon__main"
+          onClick={() => setShow(!show)}
+          style={{ display: "flex", alignItems: "baseline" }}
+        >
+          <AccountCircleOutlinedIcon style={{ fontSize: "35px" }} />
+          <div className={!show ? "icon__menu" : "icon__menu active"}>
+            <p>
+              <AccountCircleOutlinedIcon /> Setting
+            </p>
+            <p>
+              {" "}
+              <LockOutlinedIcon /> Change Password
+            </p>
+            <p>
+              {" "}
+              <PlayForWorkOutlinedIcon /> Log Out
+            </p>
           </div>
-        </div>
-        <div className="icon__main">
-          <ShoppingCartOutlinedIcon />
-          <div className="icon__menu">
-            <p>icon</p>
-            <p>title</p>
-          </div>
-        </div>
-        <div>
-          <TurnedInNotIcon />
-        </div>
-        <div>
-          <NotificationsNoneOutlinedIcon />
-        </div>
-        <div>
-          <PeopleOutlinedIcon />
         </div>
       </div>
     </div>

@@ -55,11 +55,30 @@ border-radius: 20px;
 .header__right .icon__main .icon__menu{
     display: none;
     position: absolute;
-    top: 140%;
+    top: 120%;
     left: -150px;
     width: 200px;
-    background-color: red;
+    background-color: #fff;
     transition: .3s;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    border-top: 4px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+    border-left: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+.header__right .icon__main .icon__menu.active{
+    display: block;
+}
+.header__right .icon__main .icon__menu p{
+    padding: 5px 5px;
+    font-size: 14px;
+ 
+}
+.header__right .icon__main .icon__menu p:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
 }
 .admin__header  .MuiSvgIcon-root:hover{
     cursor: pointer;
