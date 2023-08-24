@@ -58,6 +58,16 @@
     font-weight: bold;
 
 }
+.services .single__service .service__title a{
+    color: dodgerblue;
+    font-size: 13px;
+    font-weight: normal;
+    transition: .2s;
+}
+.services .single__service .service__title a:hover{
+    color: rgb(21, 94, 168);
+
+}
 .services .single__service .desc{
     font-size: 14px;
 }

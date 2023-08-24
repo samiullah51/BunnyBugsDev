@@ -4,15 +4,21 @@ import projects from "../../../assets/projects.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-function SingleMember() {
+function SingleMember({ member }) {
   const [menu, setMenu] = useState(false);
 
   return (
     <div className="single__service">
       <img src={projects} alt="" />
-      <p className="service__title">Sami Samiullah</p>
-      <p className="service__title">MERN Stack Developer</p>
-      <p className="status">Publish</p>
+      <p className="service__title" style={{ textAlign: "center", flex: 1 }}>
+        {member.memberName}
+        <br />
+        <a href={member.socialLink}>{member.socialLink}</a>
+      </p>
+      <p className="service__title" style={{ textAlign: "center", flex: 1 }}>
+        {member.memberDesignation}
+      </p>
+      <p className="status">{member.status.toUpperCase()}</p>
       <p className="timing edit">Edit</p>
       <p className="timing delete">Delete</p>
     </div>

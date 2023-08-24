@@ -2,14 +2,14 @@ import React from "react";
 
 function SocialSection() {
   return (
-    <section class="social-section bg-grey bd-top bd-bottom">
-      <div class="container">
-        <div class="row social-wrap">
-          <div class="col-md-3 col-sm-6 sm-padding">
-            <div class="social-item bd-right">
-              <div class="social-icon">
+    <section className="social-section bg-grey bd-top bd-bottom">
+      <div className="container">
+        <div className="row social-wrap">
+          <div className="col-md-3 col-sm-6 sm-padding">
+            <div className="social-item bd-right">
+              <div className="social-icon">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
               </div>
               <h4>
@@ -17,11 +17,11 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 sm-padding">
-            <div class="social-item bd-right">
-              <div class="social-icon icon-2">
+          <div className="col-md-3 col-sm-6 sm-padding">
+            <div className="social-item bd-right">
+              <div className="social-icon icon-2">
                 <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
               </div>
               <h4>
@@ -29,11 +29,11 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 sm-padding">
-            <div class="social-item bd-right">
-              <div class="social-icon icon-3">
+          <div className="col-md-3 col-sm-6 sm-padding">
+            <div className="social-item bd-right">
+              <div className="social-icon icon-3">
                 <a href="#">
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </div>
               <h4>
@@ -41,11 +41,11 @@ function SocialSection() {
               </h4>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 sm-padding">
-            <div class="social-item">
-              <div class="social-icon icon-5">
+          <div className="col-md-3 col-sm-6 sm-padding">
+            <div className="social-item">
+              <div className="social-icon icon-5">
                 <a href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <i className="fa-brands fa-whatsapp"></i>
                 </a>
               </div>
               <h4>

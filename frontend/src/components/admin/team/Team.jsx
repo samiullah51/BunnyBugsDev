@@ -1,11 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Team.css";
 import SingleMember from "./SingleMember";
 import AddMember from "./AddMember";
+import axios from "axios";
+import loader from "../../../assets/loader.gif";
+
 function Team() {
   const [modal, setModal] = useState(false);
-
-  return (
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const getTeamMembers = async () => {
+      setLoading(true);
+      const gotTeamMembers = await axios.get(
+        "http://localhost:8000/api/v1/team/all"
+      );
+      setTeamMembers(gotTeamMembers.data.data);
+      setLoading(false);
+    };
+    getTeamMembers();
+  }, []);
+  return loading ? (
+    <div style={{ width: "100%", textAlign: "center" }}>
+      <img src={loader} width={400} alt="" />
+    </div>
+  ) : (
     <div className="services">
       <div className="services__header">
         <p>Our Team</p>
@@ -13,11 +32,10 @@ function Team() {
           Add New
         </div>
       </div>
-      <SingleMember />
-      <SingleMember />
-      <SingleMember />
-      <SingleMember />
-      <SingleMember />
+
+      {teamMembers.map((member) => (
+        <SingleMember member={member} />
+      ))}
 
       <div
         className="servce__modal"
