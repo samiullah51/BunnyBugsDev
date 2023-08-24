@@ -6,10 +6,10 @@ import team4 from "../assets/img/team-4.png";
 
 function TeamMembers() {
   return (
-    <section class="team-section bg-grey padding">
-      <div class="container">
-        <div class="section-heading text-center mb-50">
-          <div class="sub-heading">
+    <section className="team-section bg-grey padding">
+      <div className="container">
+        <div className="section-heading text-center mb-50">
+          <div className="sub-heading">
             <h4>// Our Team Members</h4>
           </div>
           <h2>
@@ -17,133 +17,133 @@ function TeamMembers() {
             Consulting Team
           </h2>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="team-item">
-              <div class="team-thumb">
+        <div className="row">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="team-item">
+              <div className="team-thumb">
                 <img src={team1} alt="team" />
               </div>
-              <div class="team-content text-center">
+              <div className="team-content text-center">
                 <h3>M.A. Himel Akond</h3>
                 <h4>Senior Manager</h4>
-                <ul class="team-social">
+                <ul className="team-social">
                   <li>
-                    <a href="#" class="facebook">
-                      <i class="fab fa-facebook-f"></i>
+                    <a href="#" className="facebook">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="google">
-                      <i class="fab fa-google"></i>
+                    <a href="#" className="google">
+                      <i className="fab fa-google"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="twitter">
-                      <i class="fab fa-twitter"></i>
+                    <a href="#" className="twitter">
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="pinterest">
-                      <i class="fab fa-pinterest"></i>
+                    <a href="#" className="pinterest">
+                      <i className="fab fa-pinterest"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="team-item">
-              <div class="team-thumb">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="team-item">
+              <div className="team-thumb">
                 <img src={team2} alt="team" />
               </div>
-              <div class="team-content text-center">
+              <div className="team-content text-center">
                 <h3>Alistar Josefin</h3>
                 <h4>Senior Manager</h4>
-                <ul class="team-social">
+                <ul className="team-social">
                   <li>
-                    <a href="#" class="facebook">
-                      <i class="fab fa-facebook-f"></i>
+                    <a href="#" className="facebook">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="google">
-                      <i class="fab fa-google"></i>
+                    <a href="#" className="google">
+                      <i className="fab fa-google"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="twitter">
-                      <i class="fab fa-twitter"></i>
+                    <a href="#" className="twitter">
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="pinterest">
-                      <i class="fab fa-pinterest"></i>
+                    <a href="#" className="pinterest">
+                      <i className="fab fa-pinterest"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="team-item">
-              <div class="team-thumb">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="team-item">
+              <div className="team-thumb">
                 <img src={team3} alt="team" />
               </div>
-              <div class="team-content text-center">
+              <div className="team-content text-center">
                 <h3>M.A. Velki Akida</h3>
                 <h4>Web Developer</h4>
-                <ul class="team-social">
+                <ul className="team-social">
                   <li>
-                    <a href="#" class="facebook">
-                      <i class="fab fa-facebook-f"></i>
+                    <a href="#" className="facebook">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="google">
-                      <i class="fab fa-google"></i>
+                    <a href="#" className="google">
+                      <i className="fab fa-google"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="twitter">
-                      <i class="fab fa-twitter"></i>
+                    <a href="#" className="twitter">
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="pinterest">
-                      <i class="fab fa-pinterest"></i>
+                    <a href="#" className="pinterest">
+                      <i className="fab fa-pinterest"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="team-item">
-              <div class="team-thumb">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="team-item">
+              <div className="team-thumb">
                 <img src={team4} alt="team" />
               </div>
-              <div class="team-content text-center">
+              <div className="team-content text-center">
                 <h3>Willam Mark</h3>
                 <h4>Senior Developer</h4>
-                <ul class="team-social">
+                <ul className="team-social">
                   <li>
-                    <a href="#" class="facebook">
-                      <i class="fab fa-facebook-f"></i>
+                    <a href="#" className="facebook">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="google">
-                      <i class="fab fa-google"></i>
+                    <a href="#" className="google">
+                      <i className="fab fa-google"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="twitter">
-                      <i class="fab fa-twitter"></i>
+                    <a href="#" className="twitter">
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="pinterest">
-                      <i class="fab fa-pinterest"></i>
+                    <a href="#" className="pinterest">
+                      <i className="fab fa-pinterest"></i>
                     </a>
                   </li>
                 </ul>
