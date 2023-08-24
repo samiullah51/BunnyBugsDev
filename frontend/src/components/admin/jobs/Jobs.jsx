@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Jobs.css";
 import SingleJob from "./SingleJob";
 import AddJob from "./Addjob";
+import loader from "../../../assets/loader.gif";
+import axios from "axios";
 function Jobs() {
   const [modal, setModal] = useState(false);
-
-  return (
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const getJobs = async () => {
+      setLoading(true);
+      const gotJobs = await axios.get("http://localhost:8000/api/v1/job/all");
+      setJobs(gotJobs.data.data);
+      setLoading(false);
+    };
+    getJobs();
+  }, []);
+  return loading ? (
+    <div style={{ width: "100%", textAlign: "center" }}>
+      <img src={loader} width={400} alt="" />
+    </div>
+  ) : (
     <div className="services">
       <div className="services__header">
         <p>All Jobs</p>
@@ -13,10 +29,9 @@ function Jobs() {
           Add New
         </div>
       </div>
-      <SingleJob />
-      <SingleJob />
-      <SingleJob />
-      <SingleJob />
+      {jobs.map((job) => (
+        <SingleJob key={job._id} job={job} />
+      ))}
 
       <div
         className="servce__modal"
