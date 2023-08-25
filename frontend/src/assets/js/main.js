@@ -128,7 +128,7 @@
     });
 
     // Wow JS Active
-    new WOW().init();
+    // new WOW().init();
 
     /* ======= Odometer ======= */
     $(".odometer").waypoint(
@@ -272,23 +272,23 @@
     });
 
     /* ====== Pie Chart ====== */
-    $(".piechart").easyPieChart({
-      scaleColor: "transparent",
-      lineWidth: 4,
-      lineCap: "round", //Can be butt
-      barColor: "#e85442",
-      trackColor: "transparent",
-      size: 180,
-      rotate: 0,
-      animate: 1000,
+    // $('.piechart').easyPieChart({
+    //     scaleColor: "transparent",
+    //     lineWidth: 4,
+    //     lineCap: 'round', //Can be butt
+    //     barColor: '#e85442',
+    //     trackColor: "transparent",
+    //     size: 180,
+    //     rotate: 0,
+    //     animate: 1000,
 
-      onStep: function (value) {
-        this.$el.find("span").text(Math.round(value));
-      },
-      onStop: function (value, to) {
-        this.$el.find("span").text(Math.round(to));
-      },
-    });
+    //     onStep: function (value) {
+    //         this.$el.find('span').text(Math.round(value));
+    //     },
+    //     onStop: function (value, to) {
+    //         this.$el.find('span').text(Math.round(to));
+    //     }
+    // });
 
     // Custom Cursor
     $("body").append('<div class="consult-cursor"></div>');

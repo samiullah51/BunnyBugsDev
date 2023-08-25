@@ -1,52 +1,33 @@
-import "../src/assets/css/animate.min.css";
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/animate.min.css";
+import "./assets/css/fontawesome-6.3.0.min.css";
+import "./assets/css/keyframe-animation.css";
+import "./assets/css/main.css";
+import "./assets/css/odometer.min.css";
+import "./assets/css/slider.css";
+import "./assets/css/spotlight.css";
+import "./assets/css/swiper.min.css";
+import "./assets/css/venobox.min.css";
+import "./assets/css/main.css";
 
-import "../src/assets/css/bootstrap.min.css";
+import "./assets/js/vendor/jquary-3.6.0.min.js";
+// import "./assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js";
+import "./assets/js/vendor/jquery.ajaxchimp.min.js";
+import "./assets/js/vendor/bootstrap.min.js";
+// import "./assets/js/vendor/popper.min.js";
+// import "./assets/js/vendor/chart.min.js";
+import "./assets/js/vendor/spotlight.min.js";
+import "./assets/js/vendor/jquery.isotope.js";
+import "./assets/js/vendor/odometer.min.js";
+import "./assets/js/vendor/waypoints.min.js";
+import "./assets/js/vendor/imagesloaded.pkgd.min.js";
+import "./assets/js/vendor/swiper.min.js";
+import "./assets/js/vendor/venobox.min.js";
+import "./assets/js/vendor/smooth-scroll.js";
+// import "./assets/js/vendor/wow.min.js";
+import "./assets/js/slider.js";
+import "./assets/js/main";
 
-import "../src/assets/css/fontawesome-6.3.0.min.css";
-
-import "../src/assets/css/keyframe-animation.css";
-
-import "../src/assets/css/main.css";
-
-import "../src/assets/css/odometer.min.css";
-
-import "../src/assets/css/slider.css";
-
-import "../src/assets/css/spotlight.css";
-
-import "../src/assets/css/swiper.min.css";
-
-import "../src/assets/css/venobox.min.css";
-
-import "../src/assets/css/custom.css";
-
-// import "../src/assets/js/vendor/chart.min";
-
-import "../src/assets/js/vendor/imagesloaded.pkgd.min";
-
-import "../src/assets/js/vendor/jquary-3.6.0.min";
-
-import "../src/assets/js/vendor/jquery.ajaxchimp.min";
-
-import "../src/assets/js/vendor/jquery.isotope";
-
-import "../src/assets/js/vendor/odometer.min";
-
-import "../src/assets/js/vendor/smooth-scroll";
-
-import "../src/assets/js/vendor/spotlight.min";
-
-import "../src/assets/js/vendor/swiper.min";
-import "../src/assets/js/vendor/venobox.min";
-import "../src/assets/js/vendor/waypoints.min";
-import "../src/assets/js/jquery-3.5.1.min";
-import "../src/assets/js/button-tooltip-custom";
-import "../src/assets/js/main";
-import "../src/assets/js/slider";
-// import jquery
-// const { JSDOM } = require("jsdom");
-// const $ = require("jquery");
-// import $ from "jquery";
 // pages imported
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
