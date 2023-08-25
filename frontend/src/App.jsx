@@ -51,6 +51,8 @@ import AdminApplicationsPage from "./pages/admin/AdminApplicationsPage";
 import AdminJobPage from "./pages/admin/AdminJobPage";
 import JobApplicationPage from "./pages/admin/JobApplicationPage";
 import AdminLoginPage from "./pages/admin/AdminLoginPage";
+import $ from "jquery";
+import "jquery-ui-dist/jquery-ui";
 function App() {
   return (
     <>
