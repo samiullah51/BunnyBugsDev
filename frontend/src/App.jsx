@@ -46,7 +46,7 @@ import "../src/assets/js/slider";
 // import jquery
 // const { JSDOM } = require("jsdom");
 // const $ = require("jquery");
-import $ from "jquery";
+// import $ from "jquery";
 // pages imported
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
