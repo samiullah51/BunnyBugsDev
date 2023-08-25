@@ -43,7 +43,10 @@ import "../src/assets/js/jquery-3.5.1.min";
 import "../src/assets/js/button-tooltip-custom";
 import "../src/assets/js/main";
 import "../src/assets/js/slider";
-
+// import jquery
+// const { JSDOM } = require("jsdom");
+// const $ = require("jquery");
+import $ from "jquery";
 // pages imported
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
