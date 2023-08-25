@@ -1,22 +1,23 @@
 /*===================================================
     Template Scripts
 ====================================================*/
+
 (function ($) {
-    "use strict";
+  "use strict";
 
-    // Preloader
-    $(window).on("load", function () {
-        $("body").addClass("loaded");
-    });
+  // Preloader
+  $(window).on("load", function () {
+    $("body").addClass("loaded");
+  });
 
-    $(document).ready(function () {
-        // Main Header
-        var primaryHeader = $(".primary-header"),
-            headerClone = primaryHeader.clone();
-        $(".header").after('<div class="sticky-header"></div>');
-        $(".sticky-header").html(headerClone);
-        var triggerPoint = $(".header").height();
-        var yOffset = 0;
+  $(document).ready(function () {
+    // Main Header
+    var primaryHeader = $(".primary-header"),
+      headerClone = primaryHeader.clone();
+    $(".header").after('<div class="sticky-header"></div>');
+    $(".sticky-header").html(headerClone);
+    var triggerPoint = $(".header").height();
+    var yOffset = 0;
 
         $(window).on("scroll", function () {
             yOffset = $(window).scrollTop();

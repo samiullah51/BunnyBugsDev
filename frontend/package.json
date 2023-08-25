@@ -17,6 +17,7 @@
     "@mui/styled-engine-sc": "^5.12.0",
     "axios": "^1.4.0",
     "framer-motion": "^10.16.0",
+    "jquery": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-form-stepper": "^2.0.3",
