@@ -4,6 +4,7 @@ import MainSection from "../components/MainSection/MainSection";
 import HomeShowCase from "../components/HomeShowCase/HomeShowCase";
 import Featured from "../components/Featured/Featured";
 import OnePlaceSection from "../components/OnePlaceSection/OnePlaceSection";
+import CollaborateWith from "../components/CollaborateWith/CollaborateWith";
 
 function HomePage() {
   return (
@@ -17,6 +18,8 @@ function HomePage() {
       <Featured />
       {/* oneplace section */}
       <OnePlaceSection />
+      {/* Collaborate with team */}
+      <CollaborateWith />
     </div>
   );
 }

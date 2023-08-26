@@ -49,14 +49,26 @@ border-color: var(--bs-orange);
  border-radius: 5px;
  font-size: 15px;
  font-weight: 600;
+ transition: .4s;
 }
 /* --bs-orange: #fd7e14; */
   /* --bs-yellow: #ffc107; */
 .navbar .navbar__right .register__btn{
     background-color: var(--bs-yellow) ;
     color: var(--bs-gray-dark);
+    
+}
+.navbar .navbar__right .register__btn:hover{
+    background-color: var(--bs-orange) ;
+    color: #fff;
+    cursor: pointer;
 }
 .navbar .navbar__right .login__btn{
     background-color: var(--bs-orange) ;
     color: #fff;
+}
+.navbar .navbar__right .login__btn:hover{
+    background-color: var(--bs-yellow) ;
+    color: var(--bs-gray-dark);
+    cursor: pointer;
 }

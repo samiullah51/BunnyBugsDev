@@ -1,0 +1,170 @@
+.collaborate__with{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -70px;
+}
+.collaborate__with .collaborate__left{
+    flex-basis: 35%;
+}
+.collaborate__with .collaborate__left h2{
+    font-size: 50px;
+    color: var(--bs-gray-dark);
+}
+.collaborate__with .collaborate__left p{
+    color: var(--bs-gray);
+    font-size: 18px;
+    margin: 20px 0;
+}
+.collaborate__with .collaborate__left .checks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.collaborate__with .collaborate__left .checks .check{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    transition: .8s;
+}
+.collaborate__with .collaborate__left .checks .check:hover{
+    transform: translateX(5px);
+}
+
+.collaborate__with .collaborate__left .checks .check .MuiSvgIcon-root{
+    font-size: 16px;
+    background-color: rgba(255, 192, 203, 0.562);
+    padding: 2px;
+    border-radius: 3px;
+    color: rgb(240, 70, 98);
+    margin-right: 10px;
+}
+.collaborate__with .collaborate__left .checks .check:hover .MuiSvgIcon-root{
+    color: var(--bs-gray-dark);
+}
+.collaborate__with .collaborate__left .checks .check span{
+    font-weight: 500;
+    color: var(--bs-gray-dark);
+    font-size: 18px;
+}
+.collaborate__with .collaborate__left button{
+    border: none;
+    outline: none;
+ padding: 20px 40px;
+ border-radius: 5px;
+ font-size: 15px;
+ font-weight: 600;
+ transition: .4s;
+ background-color: var(--bs-orange) ;
+ color: #fff;
+ cursor: pointer;
+ margin: 30px 0;
+
+}
+.collaborate__with .collaborate__left button:hover{
+    background-color: var(--bs-yellow) ;
+ color: var(--bs-gray-dark); 
+}
+.collaborate__with .collaborate__right{
+    flex-basis: 60%;
+    position: relative;
+}
+.collaborate__with .collaborate__right .collab__animation1{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    padding: 20px;
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    animation: collab1 3s ease-in-out infinite;
+}
+
+@keyframes collab1 {
+    0% {
+      transform: translateY(0px);/* Initial color */
+    }
+    50% {
+        transform: translateY(-20px);/* Initial color */
+        /* Final color */
+    }
+    100% {
+        transform: translateY(0px);/* Initial color */
+        /* Final color */
+    }
+  }
+  .collab__animation1 img{
+    width: 45px;
+  }
+  .collab__animation1 p{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--bs-gray-dark);
+    margin:6px 0;
+  }
+  .collab__animation1 span{
+    font-size: 14px;
+    color: var(--bs-gray);
+    margin:6px 0;
+  }
+
+  /* collab 2 */
+  .collaborate__with .collaborate__right .collab__animation2{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding: 15px;
+    width: 320px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    animation: collab2 3s ease-in-out infinite;
+}
+.collab__animation2 .collab__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.collab__animation2 .collab__header p{
+    color: var(--bs-gray-dark);
+    font-size: 22px;
+    font-weight: 500;
+}
+.collab__animation2 .collab__header span{
+    color: var(--bs-gray);
+    font-size: 14px;
+}
+.collab__animation2 .desc{
+    color: var(--bs-gray-dark);
+    font-size: 16px;
+}
+@keyframes collab2 {
+    0% {
+      transform: translateX(0px);/* Initial color */
+    }
+    50% {
+        transform: translateX(-20px);/* Initial color */
+        /* Final color */
+    }
+    100% {
+        transform: translateX(0px);/* Initial color */
+        /* Final color */
+    }
+  }

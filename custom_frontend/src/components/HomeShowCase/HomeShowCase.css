@@ -32,6 +32,12 @@ position: relative;
  font-size: 15px;
  font-weight: 600;
  margin-top: 40px;
+ transition: .4s;
+}
+.home__showcase .home__showcase__left .trial__btn:hover{
+    background-color: var(--bs-yellow) ;
+    color: var(--bs-gray-dark);
+    cursor: pointer;
 }
 .home__showcase .home__showcase__right{
     flex-basis: 65%;
