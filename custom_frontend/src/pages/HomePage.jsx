@@ -25,6 +25,16 @@ function HomePage() {
       {/* Our Apps */}
       <OurApps />
       {/* Slider */}
+      <h2
+        style={{
+          fontSize: "40px",
+          color: "var(--bs-gray-dark)",
+          textAlign: "center",
+          margin: "30px 0",
+        }}
+      >
+        Meet Our Team
+      </h2>
       <Sliderr />
     </div>
   );
