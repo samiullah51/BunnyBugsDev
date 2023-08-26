@@ -8,6 +8,8 @@ function PlaceLinks() {
       <SingleLink title="End-to-end encryption" />
       <SingleLink title="FDIC Insured" />
       <SingleLink title="REST API enabled" />
+      <SingleLink title="Easy Deployment" />
+      <SingleLink title="Online Payment" />
     </div>
   );
 }
