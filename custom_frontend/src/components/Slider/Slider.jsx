@@ -5,6 +5,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+// tech icons
+import react from "../../assets/tech/react.png";
+import redux from "../../assets/tech/redux.png";
+import js from "../../assets/tech/js.png";
+import next from "../../assets/tech/next.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -23,36 +28,42 @@ export default function Sliderr() {
       username: "Sami Samiullah",
       position: "Senior MERN Stack Developer",
       desc: "lorem some random textz 151 in vain as Pakistan hold nerve in last-over thriller. Chasing 301, Pakistan needed 11 off the final over, and just about got over the line to seal the series",
+      techImgs: [js, react, redux, next],
     },
     {
       id: 2,
       username: "Abdul Rauf",
       position: "Full Stack Developer + DevOps Engineer",
       desc: "lorem some random text are goes here",
+      techImgs: [react, redux, next],
     },
     {
       id: 3,
       username: "Monis Ali",
       position: "Templete Expert & C++ Developer",
       desc: "lorem some random text arn vain as Pakistan asdf asdfasdfasd fasdfasfasfas fasdfasdfasfasdf asfaf asdfasfasfasdfasdfasdfasdfasdfasdfasfdasfasfdasdfasdfafasdf  hold nerve in last-over thriller. Chasing 301, Pakistan needed 11 off the final over, and just about got over the line to seal the series",
+      techImgs: [react],
     },
     {
       id: 4,
       username: "Arsalan Khan",
       position: "Laravel Developer",
       desc: "loremgoes here WebGurbaz 151 in vain as Pakistan hold nerve in last-over thriller. Chasing 301, Pakistan needed 11 off the final over, and just about got over the line to seal the series",
+      techImgs: [react, redux, js],
     },
     {
       id: 5,
       username: "Ahsan Khan",
       position: "PHP Developer",
       desc: "lorem some random text are goes here WebGurbaz 151 in vain as Pakistan hold nerve in last-over thriller. Chasing 301, Pakistan needed 11 off the final over, and just about got over the line to seal the series",
+      techImgs: [js, react, redux, next],
     },
     {
       id: 5,
       username: "Mudassir Zaman",
       position: "Backend Developer",
       desc: "lorem some random text are goeskistan hold nerve in last-over thriller. Chasing 301, Pakistan needed 11 off the final over, and just about got over the line to seal the series",
+      techImgs: [next],
     },
   ];
   const colors = [
@@ -104,8 +115,18 @@ export default function Sliderr() {
           {data[activeSlide].username}
         </h2>
         <p className="position">{data[activeSlide].position}</p>
+        <div className="tech__icons">
+          {data[activeSlide].techImgs.map((tech) => (
+            <div
+              className="single__tech__icon"
+              style={{ boxShadow: `0 0 11px .1px ${colors[activeSlide]}` }}
+            >
+              <img src={tech} alt="" />
+            </div>
+          ))}
+        </div>
         <p className="desc">{data[activeSlide].desc}</p>
-
+        {/* tech icons */}
         {/* socal links */}
         <div className="social__links">
           <div
