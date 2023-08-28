@@ -6,37 +6,37 @@
     justify-content: space-between;
     margin-top: -70px;
 }
-.collaborate__with .collaborate__left{
+ .collaborate__left{
     flex-basis: 35%;
 }
-.collaborate__with .collaborate__left h2{
+ .collaborate__left h2{
     font-size: 50px;
     color: var(--bs-gray-dark);
 }
-.collaborate__with .collaborate__left p{
+.collaborate__left p{
     color: var(--bs-gray);
     font-size: 18px;
     margin: 20px 0;
 }
-.collaborate__with .collaborate__left .checks{
+ .collaborate__left .checks{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.collaborate__with .collaborate__left .checks .check{
+ .collaborate__left .checks .check{
     flex-basis: 50%;
     display: flex;
     align-items: center;
     margin: 10px 0;
     transition: .8s;
 }
-.collaborate__with .collaborate__left .checks .check:hover{
+ .collaborate__left .checks .check:hover{
     transform: translateX(5px);
 }
 
-.collaborate__with .collaborate__left .checks .check .MuiSvgIcon-root{
+ .collaborate__left .checks .check .MuiSvgIcon-root{
     font-size: 16px;
     background-color: rgba(255, 192, 203, 0.562);
     padding: 2px;
@@ -44,15 +44,15 @@
     color: rgb(240, 70, 98);
     margin-right: 10px;
 }
-.collaborate__with .collaborate__left .checks .check:hover .MuiSvgIcon-root{
+ .collaborate__left .checks .check:hover .MuiSvgIcon-root{
     color: var(--bs-gray-dark);
 }
-.collaborate__with .collaborate__left .checks .check span{
+ .collaborate__left .checks .check span{
     font-weight: 500;
     color: var(--bs-gray-dark);
     font-size: 18px;
 }
-.collaborate__with .collaborate__left button{
+ .collaborate__left button{
     border: none;
     outline: none;
  padding: 20px 40px;
@@ -66,7 +66,7 @@
  margin: 30px 0;
 
 }
-.collaborate__with .collaborate__left button:hover{
+ .collaborate__left button:hover{
     background-color: var(--bs-yellow) ;
  color: var(--bs-gray-dark); 
 }
