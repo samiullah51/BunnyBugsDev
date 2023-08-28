@@ -27,7 +27,7 @@
 }
 .our__apps .apps .app__icon{
     position: absolute;
-    bottom: -25%;
+    bottom: -21%;
     right: 10%;
     animation: rotate 10s ease infinite;
 

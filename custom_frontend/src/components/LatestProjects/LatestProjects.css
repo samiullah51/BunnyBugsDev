@@ -1,0 +1,101 @@
+.latest__project{
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+   background-color: #cccccc28;
+}
+.latest__project h2{
+    font-size: 3rem;
+    color: var(--bs-gray-dark);
+}
+.latest__project p{
+    color: var(--bs-gray);
+    margin: 20px 0;
+    font-size: 17px;
+}
+.latest__project .custom__tabs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latest__project .custom__tabs .tab{
+    margin:10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color:var(--bs-gray)
+}
+.latest__project .custom__tabs .tab.active{
+    color: var(--bs-orange);
+    border-bottom: 2px solid var(--bs-orange);
+}
+
+.latest__project .tab__contents{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0;
+}
+.latest__project .tab__contents .single__tab__content{
+    flex-basis: 31%;
+    height: 400px;
+    margin:10px;
+    border-radius: 12px;
+    position: relative;
+}
+.latest__project .tab__contents .single__tab__content .wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  #d8440ae5;
+    border-radius: 12px;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    opacity: 0;
+}
+.wrapper .cat{
+    font-size: 20px;
+    font-weight: 600;
+    color: #d6d4d4;
+}
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #e9e9e9;
+    text-align: left;
+}
+.wrapper a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.wrapper a .MuiSvgIcon-root{
+    font-size: 16px;
+    margin-left: 5px;
+  
+}
+.latest__project .tab__contents .single__tab__content img{
+    width: 100%;
+    height: 100%;
+}
+.latest__project .tab__contents .single__tab__content:hover .wrapper{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}

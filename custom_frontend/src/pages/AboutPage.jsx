@@ -10,6 +10,7 @@ import Sliderr from "../components/Slider/Slider";
 import Footer from "../components/Footer/Footer";
 import AboutShowCase from "../components/AboutShowCase/AboutShowCase";
 import SingleFeaturedCard from "../components/Featured/SingleFeaturedCard";
+import LatestProjects from "../components/LatestProjects/LatestProjects";
 
 function AboutPage() {
   return (
@@ -19,11 +20,16 @@ function AboutPage() {
       <MainSection>
         <AboutShowCase />
       </MainSection>
+      {/* Featured Section */}
       <div style={{ marginTop: "340px" }}>
         <Featured />
       </div>
+      {/* Latest Projects */}
+      <LatestProjects />
+      {/* Our Apps */}
       <OurApps />
-      {/* <Footer /> */}
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
