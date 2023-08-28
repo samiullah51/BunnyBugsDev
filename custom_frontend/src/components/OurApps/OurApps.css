@@ -23,6 +23,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.our__apps .apps .app__icon{
+    position: absolute;
+    bottom: -25%;
+    right: 10%;
+    animation: rotate 10s ease infinite;
+
 }
 .our__apps .rotateicon{
     position: absolute;

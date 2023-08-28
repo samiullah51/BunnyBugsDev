@@ -31,8 +31,7 @@ function Navbar() {
         <a href="">Carrier</a>
       </div>
       <div className="navbar__right">
-        <button className="register__btn">Register</button>
-        <button className="login__btn">Sign In</button>
+        <button className="login__btn">Apply</button>
       </div>
     </div>
   );

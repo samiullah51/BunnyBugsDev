@@ -7,6 +7,7 @@ import OnePlaceSection from "../components/OnePlaceSection/OnePlaceSection";
 import CollaborateWith from "../components/CollaborateWith/CollaborateWith";
 import OurApps from "../components/OurApps/OurApps";
 import Sliderr from "../components/Slider/Slider";
+import Footer from "../components/Footer/Footer";
 
 function HomePage() {
   return (
@@ -36,6 +37,8 @@ function HomePage() {
         Meet Our Team
       </h2>
       <Sliderr />
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

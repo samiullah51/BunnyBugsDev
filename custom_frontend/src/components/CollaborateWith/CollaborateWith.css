@@ -142,6 +142,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.collab__animation2 .collab__header .MuiSvgIcon-root{
+    color:#ccc;
+    margin-top: -20px;
+    font-size: 40px;
+}
 .collab__animation2 .collab__header p{
     color: var(--bs-gray-dark);
     font-size: 22px;
