@@ -30,12 +30,7 @@ function Navbar() {
         <img src={logo} alt="" />
       </div>
       <div className="navbar__middle">
-        <a
-          href=""
-          className="active"
-          onMouseEnter={() => setShowContent1(true)}
-          onMouseLeave={() => setShowContent1(false)}
-        >
+        <a href="" className="active">
           Why BunnyBugsDev
           <div className={!showContent1 ? "contents" : "contents active"}>
             <span> Why BunnyBugsDev</span>
@@ -73,8 +68,8 @@ function Navbar() {
         </a> */}
         <a
           href=""
-          onMouseEnter={() => setShowContent5(true)}
-          onMouseLeave={() => setShowContent5(false)}
+          // onMouseEnter={() => setShowContent5(true)}
+          // onMouseLeave={() => setShowContent5(false)}
         >
           Our Work
           <div className={!showContent5 ? "contents" : "contents active"}>
@@ -83,8 +78,8 @@ function Navbar() {
         </a>
         <a
           href=""
-          onMouseEnter={() => setShowContent6(true)}
-          onMouseLeave={() => setShowContent6(false)}
+          // onMouseEnter={() => setShowContent6(true)}
+          // onMouseLeave={() => setShowContent6(false)}
         >
           Inside BunnyBugsDev
           <div className={!showContent6 ? "contents" : "contents active"}>
@@ -93,8 +88,8 @@ function Navbar() {
         </a>
         <a
           href=""
-          onMouseEnter={() => setShowContent7(true)}
-          onMouseLeave={() => setShowContent7(false)}
+          // onMouseEnter={() => setShowContent7(true)}
+          // onMouseLeave={() => setShowContent7(false)}
         >
           Careers
           <div className={!showContent7 ? "contents" : "contents active"}>
