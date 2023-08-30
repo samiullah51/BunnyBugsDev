@@ -1,0 +1,51 @@
+.admin__banner{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.admin__banner .banner__left{
+    width: 48%;
+    height: 200px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.admin__banner .banner__left img{
+    width: 120px;
+    height: 160px;
+}
+
+.admin__banner .banner__left h3{
+    color: #fff;
+    font-weight: 600;
+}
+.admin__banner .banner__left p{
+    color: #e0dede;
+}
+.admin__banner .banner__left button{
+    border: 1px solid #fff;
+    outline: none;
+    padding: 2px 15px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+
+    
+}
+.admin__banner .banner__left button .MuiSvgIcon-root{
+    font-size: 16px;
+}
+.admin__banner .banner__left button:hover{
+    
+    background-color: #6e3e0056;
+}
+.admin__banner .banner__right{
+    width: 50%;
+margin: 0 10px;
+}

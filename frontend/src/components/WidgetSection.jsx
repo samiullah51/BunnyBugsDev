@@ -3,19 +3,19 @@ import logo from "../assets/img/logo.png";
 
 function WidgetSection() {
   return (
-    <section class="widget-section padding">
-      <div class="container">
-        <div class="section-heading text-center mb-60">
+    <section className="widget-section padding">
+      <div className="container">
+        <div className="section-heading text-center mb-60">
           <h2>
             Our vertical solutions expertise allows your <br />
             business to streamline workflow
           </h2>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="widget-item item-1">
+        <div className="row">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="widget-item item-1">
               <img src={logo} alt="logo" />
-              <p class="desc">
+              <p className="desc">
                 Duis aute irure dolor in voluptate velit esse cillum dolore eu
                 fugiat nulla Excepteur sint.
               </p>
@@ -25,12 +25,12 @@ function WidgetSection() {
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="widget-item item-2">
-              <div class="widget-header">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="widget-item item-2">
+              <div className="widget-header">
                 <h3>Main Menu</h3>
               </div>
-              <ul class="widget-list">
+              <ul className="widget-list">
                 <li>
                   <a href="about.html">About Us</a>
                 </li>
@@ -46,12 +46,12 @@ function WidgetSection() {
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="widget-item">
-              <div class="widget-header">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="widget-item">
+              <div className="widget-header">
                 <h3>Our Services</h3>
               </div>
-              <ul class="widget-list">
+              <ul className="widget-list">
                 <li>
                   <a href="service-details.html">Business</a>
                 </li>
@@ -70,18 +70,18 @@ function WidgetSection() {
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 sm-padding">
-            <div class="widget-item">
-              <div class="widget-header">
+          <div className="col-lg-3 col-md-6 sm-padding">
+            <div className="widget-item">
+              <div className="widget-header">
                 <h3>Get In Touch</h3>
               </div>
-              <div class="widget-content">
+              <div className="widget-content">
                 <p>
                   The USA — <br />
                   785 15h Street, Office 478 Boston MA, 02116
                 </p>
                 <a href="mailto:contact@gmail.com">contact@gmail.com</a>
-                <a class="number" href="%2b17006662569.html">
+                <a className="number" href="%2b17006662569.html">
                   +1 700 666 25 69
                 </a>
               </div>

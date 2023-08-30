@@ -75,12 +75,12 @@ function ServiceSection() {
             >
               <div className="service-icon">
                 <svg
-                  clip-rule="evenodd"
-                  fill-rule="evenodd"
+                  clipRule="evenodd"
+                  fillRule="evenodd"
                   height="512"
-                  image-rendering="optimizeQuality"
-                  shape-rendering="geometricPrecision"
-                  text-rendering="geometricPrecision"
+                  imageRendering="optimizeQuality"
+                  shapeRendering="geometricPrecision"
+                  textRendering="geometricPrecision"
                   viewBox="0 0 18062 18062"
                   width="512"
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ function ServiceSection() {
               <div className="service-icon">
                 <svg
                   id="_x31_px"
-                  enable-background="new 0 0 24 24"
+                  enableBackground="new 0 0 24 24"
                   height="512"
                   viewBox="0 0 24 24"
                   width="512"
@@ -146,7 +146,7 @@ function ServiceSection() {
                   width="512"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="Page-1" fill-rule="evenodd">
+                  <g id="Page-1" fillRule="evenodd">
                     <g>
                       <path
                         id="Shape"

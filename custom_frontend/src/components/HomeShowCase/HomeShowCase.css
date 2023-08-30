@@ -1,0 +1,106 @@
+.home__showcase{
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+padding-top: 80px;
+position: relative;
+}
+.home__showcase .shape__img{
+    position: absolute;
+    top: -322px;
+    left: 50px;
+    z-index: -1;
+    transform: rotate(90deg);
+}
+.home__showcase .home__showcase__left{
+    flex-basis: 45%;
+}
+.home__showcase .home__showcase__left h2{
+    font-size: 70px;
+    color: var(--bs-gray-dark);
+}
+.home__showcase .home__showcase__left .trial__btn{
+    background-color: var(--bs-orange) ;
+    color: #fff;
+    margin: 0 7px;
+    border: none;
+    outline: none;
+ padding: 20px 40px;
+ border-radius: 5px;
+ font-size: 15px;
+ font-weight: 600;
+ margin-top: 40px;
+ transition: .4s;
+}
+.home__showcase .home__showcase__left .trial__btn:hover{
+    background-color: var(--bs-yellow) ;
+    color: var(--bs-gray-dark);
+    cursor: pointer;
+}
+.home__showcase .home__showcase__right{
+    flex-basis: 65%;
+    flex-basis: 40%;
+}
+.home__showcase .home__showcase__right img{
+    width: 100%;
+}
+.home__showcase .animated__box{
+    position: absolute;
+    top: 10%;
+    left: 51%;
+    width: 160px;
+    height: 200px;
+    background-color:#fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colorChange 5s ease-in infinite;
+}
+@keyframes colorChange {
+    0% {
+      transform: translateY(0px);/* Initial color */
+    }
+    50% {
+        transform: translateY(-40px);/* Initial color */
+        /* Final color */
+    }
+    100% {
+        transform: translateY(0px);/* Initial color */
+        /* Final color */
+    }
+  }
+
+  .home__showcase .animated__box2{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 200px;
+    height: 100px;
+    background-color:#fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colorChange2 5s ease-in infinite;
+}
+@keyframes colorChange2 {
+    0% {
+      transform: translateX(0px);/* Initial color */
+    }
+    50% {
+        transform: translateX(-40px);/* Initial color */
+        /* Final color */
+    }
+    100% {
+        transform: translateY(0px);/* Initial color */
+        /* Final color */
+    }
+  }
+

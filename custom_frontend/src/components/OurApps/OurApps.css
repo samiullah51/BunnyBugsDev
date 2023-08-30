@@ -1,0 +1,74 @@
+.our__apps{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+
+}
+.our__apps h2{
+    width: 30%;
+    text-align: center;
+    font-size: 45px;
+    color: var(--bs-gray-dark);
+    margin: 20px 0;
+}
+.our__apps .apps{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.our__apps .apps .app__icon{
+    position: absolute;
+    bottom: -21%;
+    right: 10%;
+    animation: rotate 10s ease infinite;
+
+}
+.our__apps .rotateicon{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    animation: rotating 10s linear infinite;
+
+}
+.our__apps .apps .single__app{
+    width: 240px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px 6px rgba(0,0,0,0.05);
+    transition: .9s;
+}
+.our__apps .apps .single__app:hover{
+    background-color: var(--bs-orange);
+    transform: translateY(-4px);
+}
+
+/* animation */
+@keyframes rotating {
+    0% {
+      transform: rotate(0deg) scale(.2);
+    }
+    50% {
+        transform: rotate(190deg) scale(1);
+  
+          /* Final color */
+      }
+    100% {
+      transform: rotate(360deg) scale(.2);
+
+        /* Final color */
+    }
+  }

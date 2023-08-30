@@ -49,11 +49,10 @@ function Header({ route }) {
                     <Link to="/about">About</Link>
                   </li>
                   <li className={route === "service" ? "active" : ""}>
-                  <Link to="/service">Our Services</Link>
+                    <Link to="/service">Our Services</Link>
                   </li>
                   <li className={route === "team" ? "active" : ""}>
-                  <Link to="/team">Our Team</Link>
-                    
+                    <Link to="/team">Our Team</Link>
                   </li>
                   <li className={route === "care" ? "active" : ""}>
                     <Link to="/careers">Carrers</Link>
@@ -67,7 +66,7 @@ function Header({ route }) {
                 <div className="search-icon dl-search-icon">
                   <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <Link className="default-btn" href="contact.html">
+                <Link className="default-btn">
                   Get in Touch<span></span>
                 </Link>
                 <div className="mobile-menu-icon">
@@ -83,10 +82,10 @@ function Header({ route }) {
         </div>
       </header>
       <div id="popup-search-box">
-        <div class="box-inner-wrap d-flex align-items-center">
+        <div className="box-inner-wrap d-flex align-items-center">
           <form
             id="form"
-            class="popup-search"
+            className="popup-search"
             action="#"
             method="get"
             role="search"

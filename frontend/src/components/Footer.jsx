@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer class="footer-section text-center">
-      <div class="container">
-        <div class="footer-content ">
+    <footer className="footer-section text-center">
+      <div className="container">
+        <div className="footer-content ">
           <h3>© 2023 consultiva, All Rights Reserved</h3>
         </div>
       </div>

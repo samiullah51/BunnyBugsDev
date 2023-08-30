@@ -1,0 +1,128 @@
+.applications{
+    padding: 20px;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    /* margin-left: 10px; */
+    user-select: none;
+}
+.applications h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+.applications .single__application{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.979);
+    border-radius: 12px;
+
+
+}
+.single__application:hover{
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+.single__application img{
+    border-radius: 50%;
+}
+.single__application p{
+    margin: 0 20px;
+}
+.single__application .app__by{
+    font-weight: bold;
+}
+ .timing{
+    margin-left: auto;
+    font-size: 11px;
+    background-color: #da6d072d;
+    padding: 2px 10px;
+    border-radius: 7px;
+    color: var(--primary-color);
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .timing.veiw{
+    background-color: rgba(30, 143, 255, 0.219);
+    font-size: 13px;
+    color: dodgerblue
+
+
+
+}
+ .timing.delete{
+    background-color: rgba(255, 30, 49, 0.219);
+    font-size: 13px;
+    color: rgb(255, 30, 49);
+
+
+
+}
+.timing.edit{
+    background-color: rgba(30, 255, 60, 0.219);
+    font-size: 13px;
+    color: rgb(35, 133, 48);
+
+
+
+}
+ .timing.veiw:hover,  .timing.delete:hover, .timing.edit:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  opacity: .5;
+}
+.single__application .app__desc{
+    font-size: 16px;
+    color: gray;
+}
+.more__menu{
+    position: relative;
+}
+ .more__menu{
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.more__menu div{
+    position: absolute;
+    /* bottom: -20px; */
+    width: 100px;
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    z-index: 123;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+ .more__menu div p{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 3px 5px;
+}
+ .more__menu div .MuiSvgIcon-root{
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+ .more__menu div p:hover{
+    width: 100px;
+color: var(--primary-color);
+cursor: pointer;
+}
