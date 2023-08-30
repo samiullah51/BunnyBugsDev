@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import "./Navbar.css";
 import logo from "../../assets/images/logo.png";
 function Navbar() {
@@ -43,7 +44,27 @@ function Navbar() {
         >
           What we do
           <div className={!showContent2 ? "contents" : "contents active"}>
-            <span> What we do</span>
+            <div className="container">
+            <div className="row border-bottom">
+              <div className="col-12">
+                  <h3 class="mt-4 mb-4" style={{color:'var(--bs-theme)'}}>Services We Provide</h3>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-4">
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>Web Development</h5>
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>Mobile App Development</h5>
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>Digital Marketing</h5>
+
+              </div>
+              <div className="col-4">
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>UX, Product, and Design</h5>
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>DevOps Solutions</h5>
+                  <h5 class="mt-3"  style={{color:'var(--bs-orange)'}}><span className="me-1" style={{color:'var(--bs-theme'}}> <ArrowForwardIcon /></span>QA and Software Testing</h5>
+
+              </div>
+            </div>
+            </div>
           </div>
         </a>
         {/* <a
@@ -73,7 +94,7 @@ function Navbar() {
         >
           Our Work
           <div className={!showContent5 ? "contents" : "contents active"}>
-            <span> What we do</span>
+            <span> What we do </span>
           </div>
         </a>
         <a
@@ -83,7 +104,7 @@ function Navbar() {
         >
           Inside BunnyBugsDev
           <div className={!showContent6 ? "contents" : "contents active"}>
-            <span> What we do</span>
+            <h2> What we do</h2>
           </div>
         </a>
         <a

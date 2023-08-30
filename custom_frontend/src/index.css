@@ -21,6 +21,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-theme: #fbc01d;
 }
 *{
   margin: 0;
@@ -29,5 +30,10 @@
 }
 body{
   background-color: var(--bs-light);
+}
+
+.icon-bg{
+  background-color: #fd7e14;
+  border-radius: 50px;
 }
 

@@ -54,6 +54,9 @@ function Header({ route }) {
                   <li className={route === "team" ? "active" : ""}>
                     <Link to="/team">Our Team</Link>
                   </li>
+                  <li className={route === "care" ? "active" : ""}>
+                    <Link to="/careers">Carrers</Link>
+                  </li>
                   <li className={route === "contact" ? "active" : ""}>
                     <Link to="/contact">Contact Us</Link>
                   </li>
