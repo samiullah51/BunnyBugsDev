@@ -6,6 +6,7 @@
     justify-content: space-between;
     margin: 40px 0;
 }
+
 .oneplace__section .oneplace__left{
     flex-basis: 50%;
     position: relative;
@@ -188,6 +189,7 @@
   margin: 15px 0;
   border-radius: 5px;
   transition: .2s;
+  text-decoration: none;
 }
 .oneplace__section .oneplace__right .single__link:hover{
   transform: translateY(-5px);

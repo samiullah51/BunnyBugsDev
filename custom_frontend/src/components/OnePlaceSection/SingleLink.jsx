@@ -5,7 +5,7 @@ function SingleLink({ title }) {
   return (
     <a className="single__link">
       <div className="circle"></div>
-      <p>{title}</p>
+      <p style={{ margin: "0" }}>{title}</p>
       <EastIcon />
     </a>
   );
