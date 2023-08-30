@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import QuotationForm from "./pages/QuotationForm";
 function App() {
   const [count, setCount] = useState(0);
 

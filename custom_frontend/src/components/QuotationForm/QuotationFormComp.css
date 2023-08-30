@@ -1,0 +1,109 @@
+.quotation{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    border-radius: 12px;
+
+}
+.quotation .price{
+    color: var(--bs-orange);
+    font-size: 18px;
+}
+.quotation a{
+    color: var(--bs-gray-dark);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--bs-yellow);
+
+    padding: 7px 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.08);
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.quotation a:hover{
+    background-color: var(--bs-orange);
+
+
+}
+.quotation .ready{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--bs-primary);
+    margin: 10px 0;
+}
+.quotation h2{
+    color: var(--bs-gray-dark);
+    font-weight: 500;
+   margin-bottom: 20px;
+    font-size: 28px;
+}
+.quotation h1{
+    font-size: 4rem;
+    color: var(--bs-gray-dark);
+}
+.quotation .get__in__touch{
+    font-size: 20px;
+    color: var(--bs-gray-dark);
+    margin: 10px 0;
+}
+.quotation input{
+    border: 1px solid #ccc;
+    outline: none;
+    padding:   20px;
+    margin: 10px 0;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.quotation .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quotation .options .simple{
+   width: 180px;
+   height: 180px;
+   margin: 0px 20px;
+   border-radius: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 16px;
+   font-weight: 500;
+   /* border: 1px solid #ccc; */
+   box-shadow: 0 0 9px 1px rgba(0,0,0,0.08);
+color:var(--bs-gray-dark);
+   transition: .3s;
+}
+.quotation .options .simple:hover {
+    background-color: var(--bs-orange);
+    color: #fff;
+    cursor: pointer;
+}
+.quotation .options .simple:active{
+    background-color: var( --bs-purple);
+    color: #fff;
+    cursor: pointer;
+}
+.quotation .options .simple .MuiSvgIcon-root{
+    color: var(--bs-gray-dark);
+    font-size: 4rem;
+    margin: 10px 0;
+    transition: .3s;
+}
+.quotation .options .simple:hover .MuiSvgIcon-root{
+    color: #fff;
+}
