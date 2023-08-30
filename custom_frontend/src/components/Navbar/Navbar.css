@@ -1,14 +1,19 @@
 .navbar{
     width: 100%;
-    padding: 20px;
+    padding: 20px 40px;
     background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: .5s;
-   background-color:  rgba(214, 51, 132, 0.11);
+   /* background-color:  rgba(214, 51, 132, 0.11); */
+   background-color: var(--bs-light);
 
+   position: relative;
 z-index: 99;
+}
+.navbar .navbar__left{
+    margin-right: 20px;
 }
 .navbar.active{
     top: 0;
@@ -16,18 +21,37 @@ z-index: 99;
     background-color: var(--bs-light);
 }
 .navbar .navbar__middle{
-    flex-basis: 40%;
+   flex-basis: 70%;
+   margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .navbar .navbar__middle a{
     text-decoration: none;
     color: var(--bs-gray-dark);
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     transition: .2s;
 border-bottom: 1px solid transparent;
+
+}
+.navbar .navbar__middle a .contents{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    color: var(--bs-gray-dark);
+   transform: translateY(-110%);
+   z-index: -1;
+   transition: .3s;
+   background-color: transparent;
+}
+.navbar .navbar__middle a .contents.active{
+    transform: translateY(0%);
+    background-color: var(--bs-light);
 
 }
 .navbar .navbar__middle a.active{
@@ -41,7 +65,7 @@ color: var(--bs-orange);
 border-color: var(--bs-orange);
 
 }
-.navbar .navbar__right button{
+.navbar  button{
     margin: 0 7px;
     border: none;
     outline: none;
@@ -53,21 +77,21 @@ border-color: var(--bs-orange);
 }
 /* --bs-orange: #fd7e14; */
   /* --bs-yellow: #ffc107; */
-.navbar .navbar__right .register__btn{
+.navbar  .register__btn{
     background-color: var(--bs-yellow) ;
     color: var(--bs-gray-dark);
     
 }
-.navbar .navbar__right .register__btn:hover{
+.navbar  .register__btn:hover{
     background-color: var(--bs-orange) ;
     color: #fff;
     cursor: pointer;
 }
-.navbar .navbar__right .login__btn{
+.navbar  .login__btn{
     background-color: var(--bs-orange) ;
     color: #fff;
 }
-.navbar .navbar__right .login__btn:hover{
+.navbar  .login__btn:hover{
     background-color: var(--bs-yellow) ;
     color: var(--bs-gray-dark);
     cursor: pointer;

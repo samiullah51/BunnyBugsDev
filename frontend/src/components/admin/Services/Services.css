@@ -1,0 +1,240 @@
+.services{
+    padding: 20px;
+    width: 95%;
+    margin:20px auto;
+    user-select: none;
+}
+.services .services__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services__header p{
+    font-size: 26px;
+    font-weight: 400;
+}
+.services .services__header .add__new{
+    background-color: var(--primary-color);
+    font-size: 13px;
+    padding: 3px 15px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+    border: 1px solid transparent;
+    transition: .3s;
+}
+.services .services__header .add__new:hover{
+    cursor: pointer;
+    background-color: #fff;
+   color: var(--primary-color);
+    border-color:  var(--primary-color);
+}
+.services .single__service{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    margin: 15px 0;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.979);
+
+
+}
+.services .single__service:hover{
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+.services .single__service img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.services .single__service p{
+    margin-top: 10px;
+    margin: 0 10px;
+}
+.services .single__service .service__title{
+    font-weight: bold;
+
+}
+.services .single__service .desc{
+    font-size: 14px;
+}
+ .single__service .status{
+    background-color: rgb(27, 180, 86);
+    color: #fff;
+    font-size: 11px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.services .servce__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #da6d0780;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+ .servce__modal .modal__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: rgba(65, 65, 65, 0.822);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.servce__modal .modal__close:hover{
+   color: red;
+   cursor: pointer;
+}
+.servce__modal .modal__form{
+    min-width:70% ;
+    background-color: var(--primary-color);
+    height: 560px;
+    border-radius: 12px;
+    padding: 20px;
+}
+.servce__modal .title{
+    color: #ebebeb;
+    font-size: 24px;
+    font-weight: 600;
+}
+.servce__modal .modal__inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.servce__modal .input__row{
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.servce__modal .input__row label{
+    color: #ebebeb;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+ .input__row .status__dropdown{
+    outline: none;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.input__row .status__dropdown:active{
+    border-color: dodgerblue;
+}
+.input__row .status__dropdown .dropdown__options{
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: rgb(255, 255, 255);
+border-radius: 3px;
+box-shadow: 0 0 9px 1px rgba(0,0,0,0.2);
+margin-top: 5px;
+}
+.input__row .status__dropdown .dropdown__options p{
+padding: 5px 10px;
+
+}
+.input__row .status__dropdown .dropdown__options p:hover{
+
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.servce__modal .input__row input, .servce__modal  textarea{
+    outline: none;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    
+}
+
+.servce__modal .input__row input:focus, .servce__modal textarea:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.1);
+}
+
+.servce__modal .input__row .upload__file{
+    width: 100%;
+   border: 1px dashed #fff;
+   height: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   transition: .2s;
+   margin: 10px 0;
+}
+.servce__modal .input__row .upload__file .MuiSvgIcon-root{
+    color: #fff;
+    font-size: 35px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.servce__modal .input__row .upload__file:hover{
+    background-color: #e09a59b4;
+    cursor: pointer;
+}
+.servce__modal .input__row .btns{
+    align-self: flex-end;
+    display: flex;
+
+}
+.servce__modal .input__row .upload__file img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.servce__modal .input__row .btns button{
+    margin: 0 5px;
+    padding: 2px 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,0.2);
+    width: 100px;
+}
+.servce__modal .input__row .btns button:hover{
+    cursor: pointer;
+    background-color: #4b4b4b60;
+}
+.servce__modal .input__row .cancel__btn{
+    background-color: rgba(255, 0, 0, 0.384);
+    color: #fff;
+}
+.servce__modal .input__row .add__btn{
+    background-color: rgba(24, 226, 6, 0.384);
+    color: #fff;
+}
