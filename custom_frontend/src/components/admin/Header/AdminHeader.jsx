@@ -1,32 +1,30 @@
 import React, { useState } from "react";
 import "./AdminHeader.css";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import searchIcon from "../../../assets/img/search2.svg";
+// import searchIcon from "../../../assets/img/search2.svg";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import TurnedInNotIcon from "@mui/icons-material/TurnedInNot";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { useDispatch, useSelector } from "react-redux";
-import { TOGGLE_SIDEBAR } from "../../../redux/User/userTypes";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import PlayForWorkOutlinedIcon from "@mui/icons-material/PlayForWorkOutlined";
 import logo from "../../../../public/vite.svg";
 
 function AdminHeader() {
-  const sidebar = useSelector((state) => state.sidebar);
+  // const sidebar = useSelector((state) => state.sidebar);
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   return (
     <div className="admin__header">
       <div className="header__left">
         {/* <MenuOutlinedIcon onClick={() => dispatch({ type: TOGGLE_SIDEBAR })} /> */}
         <div>
-          <img src={searchIcon} width={20} alt="" />
+          {/* <img src={searchIcon} width={20} alt="" /> */}
           <input type="text" placeholder="Search here..." />
         </div>
       </div>
