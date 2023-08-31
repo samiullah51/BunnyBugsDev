@@ -1,9 +1,0 @@
-.admin__home__page{
-  display: flex;
-  align-items: flex-start;
-  justify-content:space-between;
-}
-
-.admin__home__page .admin__contents{
-  flex-basis: 80%;
-}
