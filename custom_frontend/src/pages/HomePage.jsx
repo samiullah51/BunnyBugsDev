@@ -5,7 +5,6 @@ import HomeShowCase from "../components/HomeShowCase/HomeShowCase";
 import Featured from "../components/Featured/Featured";
 import OnePlaceSection from "../components/OnePlaceSection/OnePlaceSection";
 import CollaborateWith from "../components/CollaborateWith/CollaborateWith";
-import OurApps from "../components/OurApps/OurApps";
 import Sliderr from "../components/Slider/Slider";
 import Footer from "../components/Footer/Footer";
 import QuotationFormComp from "../components/QuotationForm/QuotationForm";
@@ -24,8 +23,7 @@ function HomePage() {
       <OnePlaceSection />
       {/* Collaborate with team */}
       <CollaborateWith />
-      {/* Our Apps */}
-      <OurApps />
+    
       {/* Slider */}
       <h2
         style={{
