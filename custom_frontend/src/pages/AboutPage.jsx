@@ -24,7 +24,7 @@ function AboutPage() {
       <div style={{ marginTop: "340px" }}>
         <Featured />
       </div>
-      {/* Latest Projects */}
+      {/* Latebst Projects */}
       <LatestProjects />
       {/* Our Apps */}
       <OurApps />
