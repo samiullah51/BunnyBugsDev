@@ -1,0 +1,823 @@
+1
+00:00:02,230 --> 00:00:06,970
+In this course, you learned that you can create variables with let and const and the differences that
+
+2
+00:00:06,970 --> 00:00:13,180
+variables created with let are changeable, variables credited with const are constants and therefore
+
+3
+00:00:13,180 --> 00:00:18,460
+not really variable regarding the value they hold, at least not after they have been created.
+
+4
+00:00:18,460 --> 00:00:22,900
+Now it turns out there actually is also a third way of creating variables which I haven't taught you
+
+5
+00:00:22,900 --> 00:00:27,000
+thus far and you'll see why I haven't taught it in these lectures here.
+
+6
+00:00:27,040 --> 00:00:29,700
+You can create a variable with the var keyword as well,
+
+7
+00:00:29,800 --> 00:00:32,760
+so besides let and const, that is also available.
+
+8
+00:00:32,980 --> 00:00:39,010
+Var creates a variable, just like let does and the only difference we can clearly see right now is that
+
+9
+00:00:39,010 --> 00:00:40,810
+const creates a constant.
+
+10
+00:00:40,810 --> 00:00:46,600
+So var indeed, just like let creates a variable which you can really change, which of course raises the
+
+11
+00:00:46,600 --> 00:00:50,740
+question why do we have var and let? If they do the same,
+
+12
+00:00:50,740 --> 00:00:53,600
+why do we need these two different keywords?
+
+13
+00:00:53,620 --> 00:00:56,000
+Well turns out they don't exactly do the same.
+
+14
+00:00:56,020 --> 00:01:01,990
+Now let's first have a look at availability and there var has been available since ever,
+
+15
+00:01:01,990 --> 00:01:08,710
+this is the way to create variables since Javascript exists essentially. Let on the other hand is only
+
+16
+00:01:08,710 --> 00:01:10,890
+available since that ES6 version,
+
+17
+00:01:10,890 --> 00:01:16,570
+so since browsers started to adopt that and it's the same for const. So that's a difference
+
+18
+00:01:16,570 --> 00:01:23,470
+but this only explains since when we can use these features, not why we need let. Now that on the other
+
+19
+00:01:23,470 --> 00:01:27,220
+hand can be answered with this last comparison here.
+
+20
+00:01:27,250 --> 00:01:32,860
+Var allows us to create variables in the function and global scope and that's something you learned about
+
+21
+00:01:32,860 --> 00:01:34,010
+in this course already right,
+
+22
+00:01:34,090 --> 00:01:37,060
+and you learned it for let, not for var.
+
+23
+00:01:37,090 --> 00:01:38,150
+Well turns out
+
+24
+00:01:38,200 --> 00:01:44,830
+actually let does not really use function and global scope, although in many cases it behaves exactly like
+
+25
+00:01:44,830 --> 00:01:51,070
+that but it uses a concept called block scope and the same is true for const. So let's now dive into
+
+26
+00:01:51,070 --> 00:01:57,910
+block scope and find out how that differs from function and global scope and what that means for you and
+
+27
+00:01:57,910 --> 00:01:59,970
+for the way you write your scripts.
+
+28
+00:02:00,040 --> 00:02:05,420
+You can spin up a simple project for that, attached you also find a dummy one, this is simply a index.html
+
+29
+00:02:05,430 --> 00:02:08,740
+file with nothing in it but a script imported in the end,
+
+30
+00:02:08,740 --> 00:02:12,100
+script imported to this empty app.js file and in there
+
+31
+00:02:12,100 --> 00:02:13,920
+let's write some code. Now
+
+32
+00:02:13,930 --> 00:02:20,710
+I did mention that any variable you create with const or let outside of a function is global and any
+
+33
+00:02:20,710 --> 00:02:24,840
+variable you create with const or let inside a whole function is local,
+
+34
+00:02:24,880 --> 00:02:28,520
+so it belongs to that function and can't be accessed from outside.
+
+35
+00:02:28,750 --> 00:02:30,010
+Is that false?
+
+36
+00:02:30,010 --> 00:02:30,430
+No.
+
+37
+00:02:30,460 --> 00:02:34,030
+The good news is that is totally true, so what you learned is true,
+
+38
+00:02:34,030 --> 00:02:39,820
+there's just a bit more to const and let than what we covered thus far and for a good reason because
+
+39
+00:02:39,820 --> 00:02:42,270
+that can only be fully explained now that
+
+40
+00:02:42,310 --> 00:02:45,010
+we also know if statements and loops.
+
+41
+00:02:45,010 --> 00:02:50,830
+So let's start simple, let's add a variable name here maybe, good old name Max or your name of course
+
+42
+00:02:51,160 --> 00:02:58,540
+and let's add a function and we can say greet here and in this function, if I console log name, then you
+
+43
+00:02:58,540 --> 00:03:01,410
+learned that of course 
+
+44
+00:03:01,450 --> 00:03:07,740
+if I call greet here, we actually will see Max being printed out in the console.
+
+45
+00:03:07,810 --> 00:03:12,900
+Let's quickly validate that by going to the page, opening the developer tools and there,
+
+46
+00:03:12,900 --> 00:03:14,440
+let's go to the console and
+
+47
+00:03:14,490 --> 00:03:16,430
+if I reload the page, we see Max here.
+
+48
+00:03:16,440 --> 00:03:19,370
+Now that's not too surprising, that is something we learned before.
+
+49
+00:03:21,190 --> 00:03:25,480
+Now what you also learned is that you can go into a function and create a variable in here,
+
+50
+00:03:25,480 --> 00:03:27,000
+let's say age
+
+51
+00:03:27,280 --> 00:03:30,160
+and if I now also output that, this will also work
+
+52
+00:03:30,160 --> 00:03:34,810
+but what will not work is if I tried to output it from outside of that function.
+
+53
+00:03:34,810 --> 00:03:40,310
+So if I try to put name and age down there, name will work because that is a global variable here
+
+54
+00:03:40,390 --> 00:03:42,850
+but age will actually not work.
+
+55
+00:03:42,850 --> 00:03:47,880
+So if we save that and we then reload, you'll see I get an error, uncaught reference error,
+
+56
+00:03:47,890 --> 00:03:53,620
+age is not defined in line 8 and that's exactly this line and exactly this variable.
+
+57
+00:03:53,620 --> 00:03:59,890
+Now on the other hand if I delete this here and it don't try to output age here and we reload, this works,
+
+58
+00:03:59,890 --> 00:04:05,920
+this is from line 5 which is instead of our function, this log here and from line 8 we only print the
+
+59
+00:04:05,920 --> 00:04:06,620
+name.
+
+60
+00:04:06,760 --> 00:04:10,330
+So that is working and that is what we already learned.
+
+61
+00:04:10,390 --> 00:04:16,120
+You also learned that you can shadow variables so that we could re-declare a variable in here inside
+
+62
+00:04:16,120 --> 00:04:18,970
+of a function which we already declared outside of it.
+
+63
+00:04:18,970 --> 00:04:23,960
+If we would try to declare an existing function here, then we'll actually get an error,
+
+64
+00:04:23,960 --> 00:04:30,280
+so if I try to do that and re-declare name after declaring it here, if I now reload, you'll see I
+
+65
+00:04:30,280 --> 00:04:33,890
+get an error because the identifier name has already been declared.
+
+66
+00:04:34,330 --> 00:04:41,950
+But if I delete this line here and we now reload, the script works just fine and we print Manuel inside
+
+67
+00:04:41,950 --> 00:04:48,250
+of the function, so re-declaring the variable name here does not work because this is locally inside
+
+68
+00:04:48,250 --> 00:04:53,680
+of a function and therefore Javascript actually shadows this outside variable, which means it kind of
+
+69
+00:04:53,770 --> 00:05:00,310
+overwrites said but only inside of this function, it simply ignores this outer global variable you could
+
+70
+00:05:00,310 --> 00:05:03,430
+say. So that is what you already know,
+
+71
+00:05:03,460 --> 00:05:05,140
+now what is new.
+
+72
+00:05:05,230 --> 00:05:12,010
+Actually as I mentioned, variables and constants created with let and const are block scope.
+
+73
+00:05:12,010 --> 00:05:19,000
+Var variables and var is that keyword which we haven't used before are function and global scope.
+
+74
+00:05:19,120 --> 00:05:25,690
+So therefore in everything we learned thus far, you could absolutely replace let with var, like I did
+
+75
+00:05:25,690 --> 00:05:26,090
+it here,
+
+76
+00:05:26,110 --> 00:05:31,840
+I replaced let in all three places with var and you would get the exact same behavior, if I reload I
+
+77
+00:05:31,850 --> 00:05:33,600
+get the exact same output,
+
+78
+00:05:33,670 --> 00:05:39,230
+now one first difference we can see here by the way is if I try to re-declare this,
+
+79
+00:05:39,430 --> 00:05:43,350
+so here where I declare this again after already having declared it,
+
+80
+00:05:43,570 --> 00:05:46,090
+this will actually not throw an error,
+
+81
+00:05:46,120 --> 00:05:51,160
+so here we already see a first minor difference, though that's not the main difference I want to dive
+
+82
+00:05:51,160 --> 00:05:51,930
+into right now
+
+83
+00:05:51,970 --> 00:05:59,040
+but this already is a little thing where they differ and arguably let is better here because we want
+
+84
+00:05:59,040 --> 00:06:03,490
+to get an error in such a case because if we re-declare a variable which we already declared in the
+
+85
+00:06:03,490 --> 00:06:06,670
+same scope, that typically is not what we want.
+
+86
+00:06:06,760 --> 00:06:11,290
+We maybe want to assign a new value, sure but we don't want to recreate that variable,
+
+87
+00:06:11,290 --> 00:06:13,420
+that's not something you would ever want to do.
+
+88
+00:06:13,930 --> 00:06:17,950
+So that's a first difference but not the main difference, the main difference is really related to
+
+89
+00:06:17,950 --> 00:06:19,120
+the scope.
+
+90
+00:06:19,120 --> 00:06:22,010
+So here we have this function, all great
+
+91
+00:06:22,090 --> 00:06:24,160
+and let me try to output age down there,
+
+92
+00:06:24,160 --> 00:06:27,600
+so a variable which only was created inside of the function and
+
+93
+00:06:27,820 --> 00:06:31,120
+if I now reload, you'll see we still get that same error.
+
+94
+00:06:31,220 --> 00:06:37,220
+So phrased a bit differently with not being defined, so the declaration is not a problem but the
+
+95
+00:06:37,220 --> 00:06:40,220
+definition but generally, this still doesn't work,
+
+96
+00:06:40,220 --> 00:06:42,490
+so no difference there.
+
+97
+00:06:42,500 --> 00:06:43,840
+Now we can see a difference
+
+98
+00:06:43,850 --> 00:06:49,580
+if I change something. Let's say we want to add an if check here and check if name is equal to Max, which
+
+99
+00:06:49,580 --> 00:06:53,150
+is here of course is, so we will make it into that if statement here
+
+100
+00:06:53,150 --> 00:07:01,940
+as long as name is Max and then in here, I create a new variable and this variable simply is a hobbies
+
+101
+00:07:02,090 --> 00:07:11,220
+array where I have sports and cooking for example and then I can then console log my hobbies here
+
+102
+00:07:12,750 --> 00:07:17,370
+and now let me also try to log my hobbies down there.
+
+103
+00:07:17,590 --> 00:07:19,750
+Now this is not a function, this is an if statement,
+
+104
+00:07:19,750 --> 00:07:20,010
+right,
+
+105
+00:07:20,020 --> 00:07:23,090
+that's really important, this is an if statement not a function
+
+106
+00:07:23,260 --> 00:07:24,360
+and I'm using var.
+
+107
+00:07:24,430 --> 00:07:28,690
+So now if I save that and I reload, you'll see we get no error,
+
+108
+00:07:28,720 --> 00:07:30,560
+instead here we print the array,
+
+109
+00:07:30,580 --> 00:07:35,950
+that's from line number 5 which is this line here in the if statement
+
+110
+00:07:35,950 --> 00:07:41,050
+and we also print the array here and that's coming from line number 14
+
+111
+00:07:41,260 --> 00:07:43,760
+and that's outside of the if statement down here.
+
+112
+00:07:43,840 --> 00:07:49,370
+So maybe, you expected that this would not work because the variable is created in an if statement
+
+113
+00:07:49,420 --> 00:07:51,070
+but what does this mean?
+
+114
+00:07:51,070 --> 00:07:55,940
+Well since it is not in a function and the if statement also is not in a function,
+
+115
+00:07:56,140 --> 00:07:59,200
+this simply means that this is created as a global variable,
+
+116
+00:07:59,320 --> 00:08:06,100
+so it means that this really is now a normal global variable as if we would have defined it out there.
+
+117
+00:08:06,100 --> 00:08:11,530
+So therefore anywhere in the code where we can access global variables which basically is everywhere,
+
+118
+00:08:11,950 --> 00:08:17,130
+we can use hobbies, that of course includes our function here just in case you're wondering. If I tried
+
+119
+00:08:17,140 --> 00:08:19,360
+to access hobbies there and reload,
+
+120
+00:08:19,360 --> 00:08:22,200
+that will also work, we're outputting it down here.
+
+121
+00:08:22,510 --> 00:08:23,860
+So that's interesting,
+
+122
+00:08:23,860 --> 00:08:32,310
+now let me change this var here to let, so only there, all other variables are still created with var
+
+123
+00:08:32,320 --> 00:08:36,760
+though you could change them to let as well but the hobbies variable is the important one right now.
+
+124
+00:08:36,760 --> 00:08:38,400
+So I change this to let
+
+125
+00:08:38,440 --> 00:08:41,790
+and of course you could also change it to const because we never assign a new value,
+
+126
+00:08:41,830 --> 00:08:43,180
+that's not what this is about here,
+
+127
+00:08:43,180 --> 00:08:44,740
+so you can use let or const here,
+
+128
+00:08:44,830 --> 00:08:47,090
+don't use var, that's the important thing
+
+129
+00:08:47,170 --> 00:08:48,940
+and with that changed and saved,
+
+130
+00:08:48,940 --> 00:08:50,110
+try reloading.
+
+131
+00:08:50,320 --> 00:08:54,250
+Now you get an error, we get that log from line number 5,
+
+132
+00:08:54,640 --> 00:09:01,690
+so this log here works just fine as we would probably expect because we declare and create the variable
+
+133
+00:09:01,690 --> 00:09:08,560
+in the line before that but thereafter, we get an error stemming from line number 14 which in the end
+
+134
+00:09:08,590 --> 00:09:13,070
+is this line where we tried to access hobbies and that's the difference,
+
+135
+00:09:13,150 --> 00:09:20,680
+var only knows global scope and function scope, so a variable created in a function can't be used outside
+
+136
+00:09:20,680 --> 00:09:21,460
+of it,
+
+137
+00:09:21,460 --> 00:09:28,690
+a variable created globally can be used everywhere. Now for let and const, this also is the case, variables
+
+138
+00:09:28,690 --> 00:09:34,120
+and functions can be used in functions, variables outside of functions can be used everywhere but actually
+
+139
+00:09:34,500 --> 00:09:40,420
+let and const don't care about functions, they care about the curly braces and functions happen to have curly
+
+140
+00:09:40,420 --> 00:09:41,460
+braces here,
+
+141
+00:09:41,530 --> 00:09:47,080
+so do if statements and of course I'm not talking about the curly braces you have when you create some
+
+142
+00:09:47,110 --> 00:09:47,910
+object right,
+
+143
+00:09:47,910 --> 00:09:52,600
+so if you create a person here and you have the curly braces here to create an object, I'm not talking
+
+144
+00:09:52,600 --> 00:09:59,200
+about those, I'm talking about the curly braces you have for if statements, for loops, for functions, so
+
+145
+00:09:59,200 --> 00:10:02,270
+not for this object value which you're creating here.
+
+146
+00:10:02,410 --> 00:10:08,350
+You can't create a variable in here to begin with because that would be invalid syntax, here you need
+
+147
+00:10:08,350 --> 00:10:09,410
+key-value pairs,
+
+148
+00:10:09,460 --> 00:10:13,510
+so just to make that clear. But any other curly braces you have in your code,
+
+149
+00:10:13,510 --> 00:10:17,650
+so if statements, loops, functions, try/catch blocks,
+
+150
+00:10:17,800 --> 00:10:25,000
+if you create variables between the curly braces with let or const, then the variables are scoped
+
+151
+00:10:25,000 --> 00:10:26,290
+to that block,
+
+152
+00:10:26,290 --> 00:10:31,960
+so the curly braces mark a block in the end and therefore they are only available in that block,
+
+153
+00:10:32,020 --> 00:10:36,720
+they don't spill outside of that block and that is a key difference
+
+154
+00:10:36,760 --> 00:10:41,820
+and that is great because that gives you more control over where your data is available.
+
+155
+00:10:41,920 --> 00:10:44,740
+You want to use it everywhere, you want to use hobbies everywhere,
+
+156
+00:10:44,740 --> 00:10:50,130
+well simply declare it here and only assign a new value in here,
+
+157
+00:10:50,130 --> 00:10:56,700
+this will work because from every block you can access all variables or constants defined on a higher
+
+158
+00:10:56,700 --> 00:10:57,090
+level,
+
+159
+00:10:57,090 --> 00:11:03,320
+so in a block around that block, be that a function or be that your main script but you can't, just as
+
+160
+00:11:03,330 --> 00:11:08,930
+for the function global scope you learned earlier, you can't access variables to find in some child block
+
+161
+00:11:08,940 --> 00:11:14,960
+so to say, so a block on a different, on a lower level from outside that block, that does not work.
+
+162
+00:11:15,060 --> 00:11:22,070
+So you have more control with that block scope thing and you can also avoid some nasty issues or unintended
+
+163
+00:11:22,080 --> 00:11:25,500
+behaviors which you had with var in the past.
+
+164
+00:11:25,680 --> 00:11:32,190
+That's why with modern Javascript as we're learning and using it in this course, you only use let and
+
+165
+00:11:32,190 --> 00:11:36,670
+const, it forces you to write cleaner code because you get an error
+
+166
+00:11:36,750 --> 00:11:42,600
+if you want to use your hobbies down there and you only declare them here because that simply is incorrect
+
+167
+00:11:42,600 --> 00:11:47,340
+code and that's good, it forces you to find a solution like the one I just showed you where you define
+
+168
+00:11:47,340 --> 00:11:49,240
+it here in the assign new value here.
+
+169
+00:11:49,380 --> 00:11:54,320
+So it forces you to write better, cleaner code which is clearer about your intentions.
+
+170
+00:11:54,360 --> 00:11:59,790
+It's actually a bit unexpected that you would want to use hobbies down there if you define the variable
+
+171
+00:11:59,880 --> 00:12:01,280
+inside of an if function
+
+172
+00:12:01,350 --> 00:12:02,670
+because if you define it
+
+173
+00:12:02,670 --> 00:12:07,590
+and with that I mean you use the let keyword or the const keyword, if you define it in an if function or in
+
+174
+00:12:07,590 --> 00:12:08,700
+a loop,
+
+175
+00:12:08,700 --> 00:12:13,850
+the first thing I would think as a developer is that you probably only want to use it there,
+
+176
+00:12:13,890 --> 00:12:17,060
+otherwise you would have created it as a global variable, right?
+
+177
+00:12:17,100 --> 00:12:22,020
+So it forces you to be clearer about your intentions and that's always a good thing because it leads
+
+178
+00:12:22,020 --> 00:12:23,900
+to cleaner code.
+
+179
+00:12:24,030 --> 00:12:30,320
+So that's the thing behind let and const and as a consequence, we really don't use var anymore,
+
+180
+00:12:30,540 --> 00:12:33,750
+only work with let and const in modern Javascript,
+
+181
+00:12:33,750 --> 00:12:41,090
+don't use var, there really is no use case where you would need var anymore. So why is var still in the
+
+182
+00:12:41,090 --> 00:12:42,530
+language then?
+
+183
+00:12:42,520 --> 00:12:49,100
+Well because of that browser support thing, you can't remove it because that would mean if Chrome decides
+
+184
+00:12:49,100 --> 00:12:55,460
+to not support the var keyword anymore, that all scripts that still use var and that will be
+
+185
+00:12:55,460 --> 00:13:00,950
+many scripts around the world on different web pages stopped working and that might not be what you
+
+186
+00:13:00,950 --> 00:13:02,570
+want if you're working on the Chrome team.
+
+187
+00:13:02,930 --> 00:13:06,210
+So that's why we still have var but we don't use it anymore,
+
+188
+00:13:06,230 --> 00:13:12,020
+the difference is the block scope. Now a little side note, the block is really just created by the curly
+
+189
+00:13:12,020 --> 00:13:16,070
+braces, so you could theoretically also put curly braces here,
+
+190
+00:13:16,070 --> 00:13:21,710
+this does not create a Javascript object because it's not on the right side of an equal sign, so it's
+
+191
+00:13:21,710 --> 00:13:23,450
+not used as a value here,
+
+192
+00:13:23,450 --> 00:13:28,260
+Instead a variable created in here would really only be available in here.
+
+193
+00:13:28,280 --> 00:13:35,690
+Now this is not a syntax you use too often because you rarely have the case that you want to suddenly
+
+194
+00:13:35,690 --> 00:13:39,290
+create a variable randomly in some code just in a block,
+
+195
+00:13:39,320 --> 00:13:44,330
+instead it's really just in If statements, loops, functions and so on where you would need variables that
+
+196
+00:13:44,330 --> 00:13:50,620
+belong to that if statement loop and function but technically, this here also creates a block and therefore
+
+197
+00:13:50,630 --> 00:13:56,900
+if I now save this and I reload, you'll see I get an error stemming from line number 8 which is this line
+
+198
+00:13:57,080 --> 00:13:58,430
+where I can't access test.
+
+199
+00:13:58,640 --> 00:14:03,590
+So it's really the curly braces when they're not being used to create an object but in all other cases
+
+200
+00:14:03,860 --> 00:14:09,950
+that create a block and then let and const belong to that block and can only be used in there or in blocks
+
+201
+00:14:09,950 --> 00:14:11,560
+nested inside of that block,
+
+202
+00:14:11,600 --> 00:14:16,580
+So if we had a loop or an if statement inside of this if statement, then we could use hobbies in there,
+
+203
+00:14:17,000 --> 00:14:22,070
+if we had an if statement or a loop inside of the greet function, we could use age and name in there.
+
+204
+00:14:22,100 --> 00:14:25,760
+So that's exactly what you learned before with function and global scope,
+
+205
+00:14:25,760 --> 00:14:28,300
+it just isn't only about function or global scope,
+
+206
+00:14:28,370 --> 00:14:30,620
+instead that block scope thing is a thing.

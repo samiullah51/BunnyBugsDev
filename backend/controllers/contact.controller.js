@@ -1,4 +1,5 @@
 const Contact = require("../models/contact.model");
+const sendEmail = require("../utils/sendEmail");
 
 // Add contact
 const AddContact = async (req, res) => {
@@ -10,6 +11,7 @@ const AddContact = async (req, res) => {
       message: req.body.message,
     });
     const savedContact = await newContact.save();
+    savedContact && sendEmail(req.body.username, req.body.email);
     res.status(201).json({ success: true, data: savedContact, error: null });
   } catch (err) {
     res.status(400).json({ success: false, data: null, error: err.message });
