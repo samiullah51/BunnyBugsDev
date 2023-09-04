@@ -7,7 +7,7 @@ function Navbar() {
   const [handleShow, setHandleShow] = useState(false);
   const [showContent1, setShowContent1] = useState(false);
   const [showContent2, setShowContent2] = useState(false);
-  
+
   const [name, setName] = useState("Mohsin");
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -44,7 +44,10 @@ function Navbar() {
             <div className="container">
               <div className="row border-bottom">
                 <div className="col-12">
-                  <h3 className="mt-4 mb-4" style={{ color: "var(--bs-theme)" }}>
+                  <h3
+                    className="mt-4 mb-4"
+                    style={{ color: "var(--bs-theme)" }}
+                  >
                     Services We Provide
                   </h3>
                 </div>
@@ -100,19 +103,9 @@ function Navbar() {
             </div>
           </div>
         </a>
-        <Link to="/ourwork">
-          Our Work
-        </Link>
-        <a
-          href=""
-        >
-          Inside BunnyBugsDev
-        </a>
-        <a
-          href=""
-        >
-          Careers
-        </a>
+        <Link to="/ourwork">Our Work</Link>
+        <a href="">Inside BunnyBugsDev</a>
+        <a href="">Careers</a>
         <button className="login__btn">Apply</button>
       </div>
     </div>

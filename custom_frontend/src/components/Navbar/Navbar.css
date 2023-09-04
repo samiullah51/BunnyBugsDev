@@ -39,14 +39,14 @@ border-bottom: 1px solid transparent;
 }
 .navbar .navbar__middle a .contents{
     position: absolute;
-    top: 90px;
+    top: 50px;
     opacity: 0;
     left: 0;
     width: 100%;
     height: 250px;
     color: var(--bs-gray-dark);
    transform: translateY(-125%);
-   z-index: -1;
+   z-index: -133;
    transition: .3s;
    background-color: transparent;
 }
@@ -54,7 +54,8 @@ border-bottom: 1px solid transparent;
     transform: translateY(0%);
     background-color: var(--bs-light);
     opacity: 1;
-    z-index: 10;
+    z-index: -9910;
+    top: 90px;
 
 }
 .navbar .navbar__middle a.active{
