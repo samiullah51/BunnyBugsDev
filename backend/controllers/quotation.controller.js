@@ -1,28 +1,33 @@
 const Quotation = require("../models/quotation.model");
-const sendEmail = require("../utils/sendEmail");
 
 // Add Quotation
 const AddQuotation = async (req, res) => {
   try {
     const newQuotation = new Quotation({
       title: req.body.title,
+      category: req.body.category,
       options: req.body.options,
     });
     const savedQuotation = await newQuotation.save();
-    savedQuotation && sendEmail(req.body.username, req.body.email);
+
     res.status(201).json({ success: true, data: savedQuotation, error: null });
   } catch (err) {
     res.status(400).json({ success: false, data: null, error: err.message });
   }
 };
 
-// Get all Quotation
+// Get all Quotations
 const GetQuotations = async (req, res) => {
   try {
-    const allQuotations = await Quotation.find();
+    const query = req.query.cat;
+    const allQuotations = await Quotation.find({ category: query });
     res.status(201).json({ success: true, data: allQuotations, error: null });
   } catch (err) {
     res.status(400).json({ success: false, data: null, error: err.message });
   }
 };
-module.exports = { AddQuotation, GetQuotations };
+
+module.exports = {
+  AddQuotation,
+  GetQuotations,
+};
