@@ -46,9 +46,25 @@ const EditHomeBanner = async (req, res) => {
     res.status(400).json({ success: false, data: null, error: err.message });
   }
 };
+// Delete a Specific banner
+const deleteHomeBanner = async (req, res) => {
+  try {
+    const deletebanner = await HomeBanner.findByIdAndDelete(
+      req.params.bannerId
+    );
 
+    res.status(201).json({
+      success: true,
+      data: "Banner Deleted Succesfully",
+      error: null,
+    });
+  } catch (err) {
+    res.status(400).json({ success: false, data: null, error: err.message });
+  }
+};
 module.exports = {
   AddHomeBanner,
   GetHomeBanner,
   EditHomeBanner,
+  deleteHomeBanner,
 };
