@@ -10,6 +10,10 @@ const ProjectsSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      required: true,
+    },
     projectDescription: {
       type: String,
       required: true,

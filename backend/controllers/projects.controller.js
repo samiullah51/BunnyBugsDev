@@ -6,6 +6,7 @@ const AddProject = async (req, res) => {
     const newProject = new Project({
       projectName: req.body.projectName,
       status: req.body.status,
+      category: req.body.category,
       projectDescription: req.body.projectDescription,
       projectLink: req.body.projectLink,
       projectImage: req.body.projectImage,
@@ -75,6 +76,7 @@ const updateProject = async (req, res) => {
         $set: {
           projectName: req.body.projectName,
           status: req.body.status,
+          category: req.body.category,
           projectDescription: req.body.projectDescription,
           projectLink: req.body.projectLink,
           projectImage: req.body.projectImage,
