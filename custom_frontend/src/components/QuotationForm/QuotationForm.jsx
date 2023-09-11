@@ -96,11 +96,11 @@ function QuotationFormComp() {
   const handleClick = (type) => {
     setSelected(true);
     // https://localhost:8000/api/v1/bunnybugsdev/apps?type=Web%App
-    // if (type === "Web App") {
-    //   setData(webData);
-    // } else {
-    //   setData(appData);
-    // }
+    if (type === "Web App") {
+      setData(webData);
+    } else {
+      setData(appData);
+    }
   };
   const handleIndex = () => {
     setIndex(index + 1);

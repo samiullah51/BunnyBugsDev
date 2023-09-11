@@ -34,5 +34,13 @@ router.post("/add", upload.single("userFile"), async (req, res) => {
     res.status(500).send("Error uploading PDF");
   }
 });
+router.get("/", async (req, res) => {
+  try {
+    const applications = await jobApplicationModel.find();
+    res.status(201).send(applications);
+  } catch (error) {
+    res.status(500).send("Error uploading PDF");
+  }
+});
 
 module.exports = router;

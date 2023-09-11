@@ -15,6 +15,7 @@ const teamRouter = require("./routes/team.routes");
 const jobsRouter = require("./routes/jobs.routes");
 const contactRouter = require("./routes/contact.routes");
 const jobApplicationRouter = require("./routes/jobApplication.routes");
+const quotationRouter = require("./routes/quotation.routes");
 
 // dotEnv Configuration
 dotenv.config();
@@ -43,12 +44,12 @@ app.use("/api/v1/team", teamRouter);
 app.use("/api/v1/job", jobsRouter);
 app.use("/api/v1/contact", contactRouter);
 app.use("/api/v1/jobapplication", jobApplicationRouter);
+app.use("/api/v1/quotation", quotationRouter);
 
 app.get("/test/download/:filename", (req, res) => {
   const filename = req.params.filename;
   const filePath = path.join(__dirname, "uploads", filename);
-
-  res.sendFile(filePath);
+  res.status(200).json(filePath);
 });
 // Listening to a server
 app.listen(process.env.PORT || 8000, () => {
